@@ -1,0 +1,79 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #151941;
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 80px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #59566E;
+}
+
+a {
+  font-family: 'Gilroy-Light', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #59566E;
+}
+
+.text {
+  font-family: 'Gilroy-Light', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  margin: 30px 0;
+}
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 15px;
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 160%;
+
+  &-primary {
+    color: white;
+  }
+
+  &-secondary {
+    color: #151941;
+    background-color: white;
+    border-color: white;
+  }
+}

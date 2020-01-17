@@ -1,0 +1,79 @@
+#balloon, .balloon {
+  position: absolute;
+
+  &-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &_1 {
+    left: 0;
+    top: -200px
+  }
+
+  &_2 {
+    top: -150px;
+    right: 0;
+  }
+
+  &_3 {
+    right: 264px;
+  }
+
+  &_4 {
+    left: 0;
+  }
+
+  &_5 {
+    top: -120px;
+    left: 52%;
+  }
+
+  &_6 {
+    left: 60px;
+    top: 370px;
+  }
+
+  &_7 {
+    right: 0;
+    top: 150px
+  }
+
+  &_8 {
+    left: 0;
+    top: -80px;
+  }
+
+  &_9 {
+    right: 250px;
+    top: -120px;
+  }
+
+  &_10 {
+    right: 0;
+    top: -80px;
+  }
+}
+
+#screenshot, .screenshot {
+  position: absolute;
+
+  &-container {
+    z-index: 1;
+    position: relative;
+  }
+
+  &_1 {
+    top: -150px;
+  }
+
+  &_2 {
+    top: 40px;
+    left: 270px;
+  }
+
+  &_3 {
+    top: 0;
+    right: 0;
+  }
+}
