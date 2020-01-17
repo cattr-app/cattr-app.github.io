@@ -1,17 +1,24 @@
-'use strict';
+const gulp = require('gulp');
+const gulpSass = require('gulp-sass');
+const sass = require('node-sass');
  
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+gulpSass.compiler = sass;
  
-sass.compiler = require('node-sass');
+// Compile SASS
+gulp.task('sass', () => gulp
+  .src('./src/sass/**/*.scss')
+  .pipe(gulpSass().on('error', gulpSass.logError))
+  .pipe(gulp.dest('./build/assets/css'))
+);
+
+// Copy static files (like robots.txt, favicon, index.html, etc)
+gulp.task('static', () => gulp.src('./src/static/**').pipe(gulp.dest('./build/')));
  
-gulp.task('sass', function () {
-  return gulp.src('./src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./assets/css'));
-});
- 
-gulp.task('sass:watch', function () {
+// Watch source files for changes
+gulp.task('watch', () => {
   gulp.watch('./src/sass/**/*.scss', gulp.series('sass'));
+  gulp.watch('./src/static/**', gulp.series('static'));
 });
 
+// Build
+gulp.task('build', gulp.parallel('sass', 'static'));
