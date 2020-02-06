@@ -29,7 +29,10 @@ module.exports = {
                 include: path.resolve(__dirname, 'src', 'sass'),
                 use: [
                     {
-                        loader: MiniCssExtractPlugin.loader
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                        }
                     },
                     'css-loader',
                     'resolve-url-loader',
@@ -60,8 +63,7 @@ module.exports = {
                         loader: "file-loader",
                         options: {
                             name: '[name]-[hash].[ext]',
-                            outputPath: 'fonts',
-                            publicPath: '../fonts'
+                            outputPath: 'fonts'
                         }
                     }
                 ]
@@ -72,7 +74,7 @@ module.exports = {
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, 'src', 'static'),
-                to: ''
+                to: '.'
             }
         ]),
         new MiniCssExtractPlugin({
