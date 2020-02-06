@@ -2,7 +2,9 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackOnBuildPlugin = require('on-build-webpack');
+const PurgeCssWebpackPlugin = require('purgecss-webpack-plugin');
 const fs = require('fs');
+const glob = require('glob');
 
 module.exports = {
     target: "web",
@@ -83,5 +85,8 @@ module.exports = {
         new WebpackOnBuildPlugin(function () {
             fs.unlinkSync(path.join(__dirname, 'build', 'build.js'));
         }),
+        new PurgeCssWebpackPlugin({
+            paths: glob.sync(path.resolve(__dirname, 'src', '**', '*'), { nodir: true })
+        })
     ]
 };
