@@ -77,3 +77,10 @@ a {
     border-color: white;
   }
 }
+
+// Temporary fix for x-axis overflow
+// CBELKIN PLEASE LEARN SOME CSS AND HTML OKAY???
+.row {
+  max-width: 100%;
+  margin: 0;
+}

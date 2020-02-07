@@ -1,66 +1,73 @@
-#balloon, .balloon {
+.balloon {
   position: absolute;
+  z-index: 1;
 
   &-container {
     position: relative;
-    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 
-  &_1 {
-    left: 0;
-    top: -200px
-  }
+  &#balloon {
+    &_1 {
+      left: 0;
+      top: -200px
+    }
 
-  &_2 {
-    top: -150px;
-    right: 0;
-  }
+    &_2 {
+      top: -150px;
+      right: 0;
+    }
 
-  &_3 {
-    right: 264px;
-  }
+    &_3 {
+      right: 264px;
+    }
 
-  &_4 {
-    left: 0;
-  }
+    &_4 {
+      left: 0;
+    }
 
-  &_5 {
-    top: -120px;
-    left: 52%;
-  }
+    &_5 {
+      top: -120px;
+      left: 52%;
+    }
 
-  &_6 {
-    left: 60px;
-    top: 370px;
-  }
+    &_6 {
+      left: 60px;
+      top: 370px;
+    }
 
-  &_7 {
-    right: 0;
-    top: 150px
-  }
+    &_7 {
+      right: 0;
+      top: 150px
+    }
 
-  &_8 {
-    left: 0;
-    top: -80px;
-  }
+    &_8 {
+      left: 0;
+      top: -80px;
+    }
 
-  &_9 {
-    right: 250px;
-    top: -120px;
-  }
+    &_9 {
+      right: 250px;
+      top: -120px;
+    }
 
-  &_10 {
-    right: 0;
-    top: -80px;
+    &_10 {
+      right: 0;
+      top: -80px;
+    }
   }
 }
 
-#screenshot, .screenshot {
-  position: absolute;
-
+.screenshot {
   &-container {
     z-index: 1;
-    position: relative;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 
   &_1 {

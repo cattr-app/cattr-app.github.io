@@ -1,4 +1,12 @@
-section, .section {
+section {
+  margin-bottom: 10em;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 3em;
+  }
+}
+
+.section {
   margin-bottom: 180px;
 
   &-text {
@@ -102,12 +110,10 @@ section, .section {
 
   &-with-rect-wave {
     background: rgba(224, 223, 237, 0.3);
-    padding: 0;
 
     &:before {
       content: "";
       position: relative;
-      top: -64px;
       display: block;
       height: 4rem;
       width: 100vw;
@@ -118,12 +124,15 @@ section, .section {
     &:after {
       content: "";
       position: relative;
-      top: -100px;
       display: block;
       height: 4rem;
       width: 100vw;
       background: hsla(0, 0%, 100%, 0.5) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: white;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: rgba(224, 223, 237, 0.3);'%3E%3C/path%3E%3C/svg%3E");
       background-size: 100% 100%;
     }
+  }
+
+  .with-screenshot {
+    padding: 5em 0;
   }
 }
