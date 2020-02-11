@@ -4,6 +4,23 @@
 @import 'sections';
 @import 'static';
 
+.top-splash {
+
+  background-color: #E65C39;
+  text-align: center;
+  width: 100vw;
+    
+
+  b {
+
+    font-size: 700;
+    display: block;
+    padding: 1.5em;
+
+  }
+
+}
+
 header {
   a {
     float: right;
