@@ -82,11 +82,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: path.join('css', 'main.css')
         }),
-        new WebpackOnBuildPlugin(function () {
-            fs.unlinkSync(path.join(__dirname, 'build', 'build.js'));
-        }),
-        new PurgeCssWebpackPlugin({
-            paths: glob.sync(path.resolve(__dirname, 'src', '**', '*'), { nodir: true })
-        })
+        // new WebpackOnBuildPlugin(function () {
+        //     fs.unlinkSync(path.join(__dirname, 'build', 'build.js'));
+        // }),
+        // new PurgeCssWebpackPlugin({
+        //     paths: glob.sync(path.resolve(__dirname, 'src', '**', '*'), { nodir: true })
+        // })
     ]
 };

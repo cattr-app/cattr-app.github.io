@@ -42,24 +42,29 @@ h6 {
 }
 
 a {
+
   font-family: 'Gilroy-Light', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
   color: #59566E;
+
 }
 
 .text {
+
   font-family: 'Gilroy-Light', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
   margin: 30px 0;
+  
 }
 
 .btn {
+
   padding: 16px 32px;
   border-radius: 15px;
   font-family: 'Gilroy-ExtraBold', sans-serif;
@@ -76,15 +81,18 @@ a {
     background-color: white;
     border-color: white;
   }
+
 }
 
-// Temporary fix for x-axis overflow
-// CBELKIN PLEASE LEARN SOME CSS AND HTML OKAY???
 .row {
+
   max-width: 100%;
   margin: 0;
+
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span {
+
   z-index: 2;
+
 }

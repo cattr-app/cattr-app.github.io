@@ -4,41 +4,102 @@
 @import 'sections';
 @import 'static';
 
-.top-splash {
+.notice {
 
-  background-color: #E65C39;
+  background: #f8b0cf;
   text-align: center;
-  width: 100vw;
-    
+  width: 100%;
 
   b {
 
-    font-size: 700;
+    color: #444;
     display: block;
+    font-size: 1.5em;
+    font-weight: 700;
     padding: 1.5em;
 
   }
 
 }
 
+.shrinked {
+
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+
+}
+
+.logotype {
+
+  width: 48px;
+  height: 48px;
+
+}
+
+.dimmed {
+
+  color: #aaa;
+
+}
+
 header {
-  a {
-    float: right;
-    line-height: 48px;
+  
+  span.links {
+    
+    * {
+
+      float: right;
+      font-weight: 700;
+      line-height: 48px;
+      margin-left: +1em;
+
+    }
+    
   }
 
   padding: 45px 0;
+
 }
 
 .logo-plus-title {
+
   display: inline-block;
+  
+}
+
+.no-decoration {
+
+  text-decoration: none;
+
+}
+
+.no-decoration:hover {
+
+  text-decoration: none;
+
 }
 
 .software-title {
+
   display: inline-block;
   vertical-align: middle;
-  margin: 0 14px;
   color: #151941;
+
+}
+
+.software-title.margin {
+
+  margin: 0 14px;
+
+}
+
+.link-container a {
+
+  color: #aaa;
+  display: inline-block;
+  padding-bottom: .5em;
+
 }
 
 .benefits {
@@ -60,7 +121,8 @@ footer {
   padding: 38px 0;
   color: white;
 
-  a, .software-title {
+  a,
+  .software-title {
     color: inherit;
 
     &:hover {
