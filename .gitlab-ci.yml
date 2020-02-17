@@ -26,7 +26,7 @@ deploy:
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
   script:
-    - ssh cattr-deploy@docs.cattr.app 'rm -rf /srv/docs/landing/*'
+    - ssh cattr-deploy@docs.cattr.app 'rm -rf /srv/landing/*'
     - scp -r build/* cattr-deploy@docs.cattr.app:/srv/landing
 
   only:
