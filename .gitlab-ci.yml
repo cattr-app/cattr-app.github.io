@@ -1,0 +1,33 @@
+image: node:alpine
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - build/
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run prod
+  only:
+    - release
+
+deploy:
+  stage: deploy
+  before_script:
+    - 'which ssh-agent || ( apk add --update openssh )'
+    - eval $(ssh-agent -s)
+    - echo "$CI_SSH_DEPLOY_SECRET" | ssh-add -
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+  script:
+    - ssh cattr-deploy@docs.cattr.app 'rm -rf /srv/docs/landing/*'
+    - scp -r build/* cattr-deploy@docs.cattr.app:/srv/landing
+
+  only:
+    - release
