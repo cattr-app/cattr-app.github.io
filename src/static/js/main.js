@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let date = new Date();
 
-	while (date.getDay() != 6) {
+	while (date.getDay() != 5) {
 		date.setDate(date.getDate() + 1);
 	}
 
-	document.getElementById('release-date').innerHTML = `${monthName[date.getMonth()]} ${date.getDay()}`;
+	document.getElementById('release-date').innerHTML = `${monthName[date.getMonth()]} ${date.getDate()}`;
 });
