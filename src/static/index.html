@@ -22,41 +22,45 @@
   <div class="notice">
     <b>This is only a public preview &nbsp;/&nbsp; Release date is set to <span id="release-date"></span>, 2020</b>
   </div>
-  <header class="container">
-    <div class="row">
-      <div class="col align-self-start">
-        <div class="logo-plus-title">
-          <img src="./resources/logo.svg" alt="Cattr logotype with a cat inside of clock face" class="logotype">
-          <h3 class="software-title margin">Cattr</h3>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-start">
+          <div class="logo-plus-title">
+            <img src="./resources/logo.svg" alt="Cattr logotype with a cat inside of clock face" class="logotype">
+            <h3 class="software-title margin">Cattr</h3>
+          </div>
         </div>
-      </div>
-      <div class="col align-self-end">
-        <span class="links">
-          <a href="https://docs.cattr.app">Documentation</a>
-          <a href="https://community.cattr.app">Forum</a>
-        </span>
+        <div class="col align-self-end">
+          <span class="links">
+            <a href="https://docs.cattr.app">Documentation</a>
+            <a href="https://community.cattr.app">Forum</a>
+          </span>
+        </div>
       </div>
     </div>
   </header>
   <main>
-    <section id="section-hero" class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 col-sm-12">
-          <aside>
-            <h1>Manage your time with ease</h1>
-            <div class="section-img-text-split-buttons">
-              <a href="https://github.com/cattr-app" class="btn btn-primary">Explore on GitHub</a>
-              <a href="/desktop/" class="btn btn-secondary">Download Desktop App</a>
-            </div>
-          </aside>
-        </div>
-        <div class="col-md-6 col-sm-12 d-none d-md-block">
-          <img src="resources/hero_illustration.png" class="w-100" alt="Illustration consists of four miniature drawings: notebook with a cup of coffee, clock faces, checked tickbox, cat and plant, and user badge silhouette" />
+    <section id="section-hero" class="section-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-sm-12">
+            <aside>
+              <h1>Manage your time with ease</h1>
+              <div class="section-img-text-split-buttons d-md-flex text-center text-md-left">
+                <a href="https://github.com/cattr-app" class="btn btn-primary">Explore on GitHub</a>
+                <a href="/desktop/" class="btn btn-secondary">Download Desktop App</a>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-6 col-sm-12 d-none d-md-block">
+            <img src="resources/hero_illustration.png" class="w-100" alt="Illustration consists of four miniature drawings: notebook with a cup of coffee, clock faces, checked tickbox, cat and plant, and user badge silhouette" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about-cattr">
+    <section id="about-cattr" class="section-about">
       <div class="balloon-container">
         <img id="balloon_1" class="balloon" src="resources/balloon_1.png" aria-hidden="true" alt="" />
         <img id="balloon_2" class="balloon" src="resources/balloon_2.png" aria-hidden="true" alt="" />
@@ -75,9 +79,9 @@
     </section>
 
     <section class="container text-center" id="our-benefits">
-      <h2>Our Benefits</h2>
+      <h2 class="mb-5">Our Benefits</h2>
       <div class="row benefits">
-        <article class="col-md-3">
+        <article class="col-md-3 mb-5">
           <img src="resources/ic_1.png" alt="Illustration with code editor silhouette">
           <h4>Open Source</h4>
           <p class="text">
@@ -85,7 +89,7 @@
           </p>
         </article>
 
-        <article class="col-md-3">
+        <article class="col-md-3 mb-5">
           <img src="resources/ic_2.png" alt="Illustration with a image viewer silhouette" />
           <h4>Activity tracking</h4>
           <p class="text">
@@ -93,7 +97,7 @@
           </p>
         </article>
 
-        <article class="col-md-3">
+        <article class="col-md-3 mb-5">
           <img src="resources/ic_3.png" alt="Illustration with a house drawn over server rack" />
           <h4>On-premises</h4>
           <p class="text">
@@ -101,7 +105,7 @@
           </p>
         </article>
 
-        <article class="col-md-3">
+        <article class="col-md-3 mb-5">
           <img src="resources/ic_4.png" alt="Illustration with puzzle piece" />
           <h4>Extensions</h4>
           <p class="text">
@@ -117,37 +121,43 @@
         <img id="balloon_4" class="balloon" src="resources/balloon_4.png" aria-hidden="true" alt="" />
         <img id="balloon_5" class="balloon" src="resources/balloon_5.png" aria-hidden="true" alt="" />
       </div>
-      <div class="row with-screenshot">
-        <div class="col-md-7 screenshot-container">
-          <div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 col-lg-3 d-flex flex-column justify-content-end align-items-center align-items-md-start">
+            <div class="text-center text-md-left">
+              <h2>Reports</h2>
+              <p class="text">
+                With Cattr, everything is in your hands. Track your team's performance and create invoices in the just few clicks.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 order-md-first screenshot-container">
             <img class="screenshot shadow rounded" src="resources/key_feature_img1.png" alt="Application screenshot with Time Use Report" />
           </div>
-        </div>
-        <div class="col-md-5 d-flex flex-column justify-content-end align-items-center align-items-md-start">
-          <h2>Reports</h2>
-          <p class="text w-50 text-center text-md-left">
-            With Cattr, everything is in your hands. Track your team's performance and create invoices in the just few clicks.
-          </p>
         </div>
       </div>
     </section>
 
-    <section id="kf-2">
+    <section id="kf-2" class="section-tasks-and-integrations">
       <div class="balloon-container">
         <img id="balloon_6" class="balloon" src="resources/balloon_6.png" aria-hidden="true" alt="" />
         <img id="balloon_7" class="balloon" src="resources/balloon_7.png" aria-hidden="true" alt="" />
       </div>
-      <div class="row with-screenshot">
-        <div class="col-md-5 d-flex flex-column align-items-center align-items-md-end">
-          <h2>Tasks & integrations</h2>
-          <p class="text text-center w-75 text-md-right">
-            Cattr can be integrated with the popular task trackers,<br> including Jira, Gitlab and Redmine. <br><br>
-            Want to integrate Cattr with something specific?<br>
-            Write your own integration — here is the <a href="#">guide</a>!
-          </p>
-        </div>
-        <div class="col-md-7 screenshot-container">
-          <img id="screenshot_3" class="screenshot rounded shadow w-100" src="resources/key_feature_img3.png" alt="Screenshot of Tasks page in Cattr web interface" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="text-center text-md-right">
+              <h2>Tasks & integrations</h2>
+              <p class="text text-center text-md-right">
+                Cattr can be integrated with the popular task trackers,<br> including Jira, Gitlab and Redmine. <br><br>
+                Want to integrate Cattr with something specific?<br>
+                Write your own integration — here is the <a href="#">guide</a>!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 screenshot-container">
+            <img id="screenshot_3" class="screenshot rounded shadow w-100" src="resources/key_feature_img3.png" alt="Screenshot of Tasks page in Cattr web interface" />
+          </div>
         </div>
       </div>
     </section>
