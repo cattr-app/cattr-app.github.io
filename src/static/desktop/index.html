@@ -29,11 +29,14 @@
         <div class="row align-items-center">
           <div class="col-md-12 col-sm-12">
             <h1>The last step between <br>you and us</h1>
-            <div class="section-img-text-split-buttons">
-              <a href="#" class="btn btn-primary">Download for macOS</a>
-              <a href="#" class="btn btn-secondary">Windows</a>
-              <a href="#" class="btn btn-secondary">Linux</a>
-            </div>
+            <noscript>
+              <div class="section-img-text-split-buttons">
+                <a href="#" class="btn btn-primary">Download for macOS</a>
+                <a href="https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.exe" class="btn btn-secondary">Windows</a>
+                <a href="https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.AppImage" class="btn btn-secondary">Linux</a>
+              </div>
+            </noscript>
+            <div class="section-img-text-split-buttons" id="dl-buttons-container"></div>
             <p class="text">
               You can also build Desktop applicaton <a href="https://github.com/cattr-app/desktop-application">from sources</a>.
             </p>
@@ -74,8 +77,8 @@
       </div>
     </div>
   </footer>
-
-  <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="../js/dl.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
 </body>
 
 </html>
