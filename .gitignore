@@ -1,6 +1,7 @@
+# OS generated files
 .DS_Store
-src/.DS_Store
-src/static/.DS_Store
+**/.DS_Store
+/.idea
 
 # Logs
 logs

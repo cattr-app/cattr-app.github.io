@@ -4,7 +4,7 @@
  */
 const downloadPaths = {
 
-  mac: '#',
+  mac: 'https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0-experimental.1.dmg',
   win: 'https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.exe',
   linux: 'https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.AppImage'
 
@@ -16,7 +16,7 @@ const downloadPaths = {
  */
 const abbriviationMap = {
 
-  mac: 'macOS',
+  mac: 'macOS<sup><b class="red">∗</b></sup>',
   win: 'Windows',
   linux: 'Linux'
 
