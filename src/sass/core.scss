@@ -85,3 +85,12 @@ img {
 h1, h2, h3, h4, h5, h6, p, a, span {
   z-index: 2;
 }
+
+.red {
+  color: #D95032;
+}
+
+.link-highlighted {
+  font-weight: 800;
+  color: darken($primary, 0.5);
+}

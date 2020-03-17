@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Cattr — Desktop App</title>
@@ -8,11 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Download Cattr Desktop for your platform">
 </head>
-
 <body class="full-size-footer">
-  <div class="notice">
-    <b>This is only a public preview &nbsp;/&nbsp; Release date is set to <span id="release-date"></span>, 2020</b>
-  </div>
   <div class="whitened-wrapper">
     <header class="container">
       <div class="row">
@@ -31,14 +26,20 @@
             <h1>The last step between <br>you and us</h1>
             <noscript>
               <div class="section-img-text-split-buttons">
-                <a href="#" class="btn btn-primary">Download for macOS</a>
+                <a href="https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0-experimental.1.dmg" class="btn btn-primary">Download for macOS<sup><b class="red">∗</b></sup></a>
                 <a href="https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.exe" class="btn btn-secondary">Windows</a>
                 <a href="https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.AppImage" class="btn btn-secondary">Linux</a>
               </div>
             </noscript>
             <div class="section-img-text-split-buttons" id="dl-buttons-container"></div>
             <p class="text">
-              You can also build Desktop applicaton <a href="https://github.com/cattr-app/desktop-application">from sources</a>.
+              <span class="text-notice">
+                <b><span class="red">∗ Notice</span> that macOS build is highly experimental:</b>
+                application is self-signed with error reporting enabled, including information about your computer, account, tracked time, synced tasks and projects.
+                To avoid those issues, create your own build using the link below.
+              </span>
+              <br><br>
+              You can also build Desktop applicaton <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">from sources</a>.
             </p>
             <br>
           </div>
@@ -78,7 +79,5 @@
     </div>
   </footer>
   <script type="text/javascript" src="../js/dl.js"></script>
-  <script type="text/javascript" src="../js/main.js"></script>
 </body>
-
 </html>
