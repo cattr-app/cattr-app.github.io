@@ -4,9 +4,9 @@
  */
 const downloadPaths = {
 
-  mac: 'https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0-experimental.1.dmg',
-  win: 'https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.exe',
-  linux: 'https://dl.cattr.app/desktop/2.3.0/cattr-2.3.0.AppImage'
+  mac: 'https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.dmg',
+  win: 'https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.exe',
+  linux: 'https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.AppImage'
 
 };
 
@@ -16,8 +16,8 @@ const downloadPaths = {
  */
 const abbriviationMap = {
 
-  mac: 'macOS<sup><b class="red">∗</b></sup>',
-  win: 'Windows',
+  mac: 'macOS',
+  win: 'Windows<sup><b class="red">∗</b></sup>',
   linux: 'Linux'
 
 };
