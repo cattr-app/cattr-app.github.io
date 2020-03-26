@@ -9,22 +9,27 @@ module.exports = {
   target: "web",
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   entry: {
-    build: path.resolve(__dirname, "src", "sass", "main.scss")
+    build: path.resolve(__dirname, "src", "js", "index.js"),
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: "/"
+    publicPath: "/",
+    filename: 'bundle.js'
   },
-
   watchOptions: {
     ignored: [
       path.resolve(__dirname, "build", "**"),
       path.resolve(__dirname, "node_modules", "**")
     ]
   },
-
   module: {
-    rules: [
+    rules: [{
+        test: /\.js$/,
+        include: path.resolve(__dirname, "src", "js"),
+        use: {
+          loader: 'babel-loader',
+        }
+      },
       {
         test: /\.s[ac]ss$/i,
         include: path.resolve(__dirname, "src", "sass"),

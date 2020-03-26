@@ -8,7 +8,7 @@
   background: #1a0c41;
 
   .whitened-wrapper {
-    background: #fff; 
+    background: #fff;
   }
 }
 
@@ -41,14 +41,13 @@
 }
 
 header {
-  span.links {
-    * {
+  .menu {
+    .menu-item {
       float: right;
       font-weight: 700;
       line-height: 48px;
       margin-left: +1em;
     }
-    
   }
   padding: 45px 0;
 }
@@ -147,8 +146,6 @@ footer {
         padding: 5px 20px;
         border-radius: 7px;
       }
-    } 
-    
-
+    }
   }
 }

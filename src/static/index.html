@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cattr — free time tracking app for organizing remote work</title>
+  <title data-translatable>Cattr — free time tracking app for organizing remote work // Cattr — бесплатное приложение учета времени для организации удаленной работы</title>
   <meta name="description" content="Manage your time with ease. Open source time tracking application">
   <link href="./css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,10 +20,29 @@
           </div>
         </div>
         <div class="col align-self-end">
-          <span class="links">
-            <a href="https://docs.cattr.app" target="_blank">Documentation</a>
-            <a href="https://community.cattr.app" target="_blank">Community</a>
-            <a href="https://demo.cattr.app" target="_blank">Demo</a>
+          <span class="menu">
+            <div class="menu-item dropdown">
+              <span class="dropdown-toggle" type="button" data-toggle="dropdown" data-translatable>
+                <span>EN</span>
+                <span>RU</span>
+              </span>
+              <div class="dropdown-menu dropdown-menu-right" >
+                <a class="dropdown-item language-switch-item" href="#" data-language="en">English</a>
+                <a class="dropdown-item language-switch-item" href="#" data-language="ru">Русский</a>
+              </div>
+            </div>
+            <a href="https://docs.cattr.app" target="_blank" class="menu-item" data-translatable>
+              <span>Documentation</span>
+              <span>Документация</span>
+            </a>
+            <a href="https://community.cattr.app" target="_blank" class="menu-item" data-translatable>
+              <span>Community</span>
+              <span>Форум</span>
+            </a>
+            <a href="https://demo.cattr.app" target="_blank" class="menu-item" data-translatable>
+              <span>Demo</span>
+              <span>Демо</span>
+            </a>
           </span>
         </div>
       </div>
@@ -35,10 +54,19 @@
         <div class="row align-items-center">
           <div class="col-md-6 col-sm-12">
             <aside>
-              <h1>Manage your time with ease</h1>
+              <h1 data-translatable>
+                <span>Manage your time with ease</span>
+                <span>Управляйте своим временем с легкостью</span>
+              </h1>
               <div class="section-img-text-split-buttons d-md-flex text-center text-md-left">
-                <a href="https://docs.cattr.app" class="btn btn-primary mr-md-1">Getting started</a>
-                <a href="/desktop/" class="btn btn-secondary">Download Desktop App</a>
+                <a href="https://docs.cattr.app" class="btn btn-primary mr-md-1" data-translatable>
+                  <span>Getting started</span>
+                  <span>Начать</span>
+                </a>
+                <a href="/desktop/" class="btn btn-secondary" data-translatable>
+                  <span>Download Desktop App</span>
+                  <span>Скачать приложение</span>
+                </a>
               </div>
             </aside>
           </div>
@@ -57,50 +85,76 @@
       </div>
 
       <div class="container text-center">
-        <h2>What is Cattr?</h2>
+        <h2 data-translatable>
+          <span>What is Cattr?</span>
+          <span>Что такое Cattr?</span>
+        </h2>
         <div class="shrinked">
-          <p class="text">
-            Cattr is an open-source time tracking solution, designed to be flawlessly integrated with your infrastructure.
-            Superpowered with features like built-in screenshot capture and activity detection, it's a great instrument to boost your team's performance straight to the top.
+          <p class="text" data-translatable>
+            <span>Cattr is an open-source time tracking solution, designed to be flawlessly integrated with your infrastructure. Superpowered with features like built-in screenshot capture and activity detection, it's a great instrument to boost your team's performance straight to the top.</span>
+            <span>Cattr - это бесплатная программа для отслеживания времени, которая размещается на вашем сервере, делает скриншоты и отслеживает активность во время работы. 
+             Cattr бесплатный, имеет открытый исходный код, хранит все данные на вашем сервере, и помогает сделать удаленную работу эффективной.</span>
           </p>
         </div>
       </div>
     </section>
 
     <section class="container text-center" id="our-benefits">
-      <h2 class="mb-5">Our Benefits</h2>
+      <h2 class="mb-5" data-translatable>
+        <span>Our Benefits</span>
+        <span>Наши приемущества</span>
+      </h2>
       <div class="row benefits">
         <article class="col-md-3 mb-5">
           <img src="resources/ic_1.png" alt="Illustration with code editor silhouette">
-          <h4>Open Source</h4>
-          <p class="text">
-            Community version is available for everyone for free under SSPL license. Forever.
+          <h4 data-translatable>
+            <span>Open source</span>
+            <span>Открытый исходный код</span>
+          </h4>
+          <p class="text" data-translatable>
+            <span>Community version is available for everyone for free under SSPL license. Forever.</span>
+            <span>Код приложения в Community версии доступен всем бесплатно по лицензии SSPL. Навсегда.</span> 
           </p>
         </article>
 
         <article class="col-md-3 mb-5">
           <img src="resources/ic_2.png" alt="Illustration with a image viewer silhouette" />
-          <h4>Activity tracking</h4>
-          <p class="text">
-            Increase the company's productivity by making a working process more focused
+          <h4 data-translatable>
+            <span>Activity tracking</span>
+            <span>Отслеживание активности</span>
+          </h4>
+          <p class="text" data-translatable>
+            <span>Increase the company's productivity by making a working process more focused</span>
+            <span>Повысьте производительность компании, сделав рабочий процесс более прозрачным.</span>
           </p>
         </article>
 
         <article class="col-md-3 mb-5">
           <img src="resources/ic_3.png" alt="Illustration with a house drawn over server rack" />
-          <h4>On-premises</h4>
-          <p class="text">
-            Keep your private data in your own infrastructure, and forget all the pain around the data protection regulations
+          <h4 data-translatable>
+            <span>On-premises</span>
+            <span>Работает на Вашем сервере</span>
+          </h4>
+          <p class="text" data-translatable>
+            <span>Keep your private data in your own infrastructure, and forget all the pain around the data protection regulations</span>
+            <span>Храните вашу личную и корпоративную информацию на собственном сервере - обеспечьте безопасность информации.</span>
           </p>
         </article>
 
         <article class="col-md-3 mb-5">
           <img src="resources/ic_4.png" alt="Illustration with puzzle piece" />
-          <h4>Extensions</h4>
-          <p class="text">
-            Extend basic functionality with the community plugins, or even write your own one! <br>
-            <a href="https://amazingcat.net/#contact-area"><b>We can help ➜</b></a>
+          <h4 data-translatable>
+            <span>Extensions</span>
+            <span>Расширения</span>
+          </h4>
+          <p class="text" data-translatable>
+            <span>Extend basic functionality with the community plugins, or even write your own one!</span>
+            <span>Расширяйте функционал приложения с помощью плагинов  сообщества - или ваших собственных!</span>
           </p>
+          <a href="https://amazingcat.net/#contact-area" data-translatable>
+              <b>We can help ➜</b>
+              <b>Мы можем помочь ➜</b>
+            </a>
         </article>
       </div>
     </section>
@@ -114,9 +168,13 @@
         <div class="row">
           <div class="col-md-5 col-lg-3 d-flex flex-column justify-content-end align-items-center align-items-md-start">
             <div class="text-center text-md-left">
-              <h2>Dashboard</h2>
-              <p class="text">
-                Gather all your time use insights on one page! Dashboard functionality lets you see how many time was spent per each task, a working timeline, and screenshots from your work.
+              <h2 data-translatable>
+                <span>Dashboard</span>
+                <span>Панель управления</span>
+              </h2>
+              <p class="text" data-translatable>
+                <span>Gather all your time use insights on one page! Dashboard functionality lets you see how many time was spent per each task, a working timeline, and screenshots from your work.</span>
+                <span>На панели управления собрана вся информация, которая потребуется для анализа вашего рабочего времени - список задач,  время их выполнения и снимки экрана, сделанные во время работы.</span>
               </p>
             </div>
           </div>
@@ -136,9 +194,13 @@
         <div class="row">
           <div class="col-md-3 offset-md-2">
             <div class="text-center text-md-right">
-              <h2>Reports</h2>
-              <p class="text">
-                Get deeper insights of your team's workflow by gathering the reports of every team member's performance. You can also export that in the CSV, XLS or PDF format.
+              <h2 data-translatable>
+                <span>Reports</span>
+                <span>Отчеты</span>
+              </h2>
+              <p class="text" data-translatable>
+                <span>Get deeper insights of your team's workflow by gathering the reports of every team member's performance. You can also export that in the CSV, XLS or PDF format.</span>
+                <span>Получите более глубокое представление о рабочих процессах вашей команды, собирая отчеты о результатах работы каждого члена команды. Вы также можете экспортировать это в формате CSV, XLS или PDF.</span>
               </p>
             </div>
           </div>
@@ -151,11 +213,16 @@
 
     <section id="team" class="section-team section-with-rect-wave">
       <div class="container text-center">
-        <p class="text">
-          Meet Cattr's awesome creators:<br>
-          e-commerce focused development team
+        <p class="text" data-translatable>
+          <span>Meet Cattr's awesome creators:<br>
+          e-commerce focused development team</span>
+          <span>Знакомьтесь со создателями Cattr:<br>
+          команда разработчиков, <br> специализирующаяся на e-commerce</span>
         </p>
-        <a class="text" href="https://amazingcat.net">say hello to amazingcat ➜</a>
+        <a class="text" href="https://amazingcat.net" data-translatable>
+          <span>say hello to amazingcat ➜</span>
+          <span>передать привет amazingcat ➜</span>
+        </a>
       </div>
     </section>
 
@@ -166,9 +233,18 @@
         <img id="balloon_10" class="balloon" src="resources/balloon_10.png" aria-hidden="true" alt="" />
       </div>
       <div class="container text-center">
-        <h2>What are you waiting for?</h2>
-        <a href="https://docs.cattr.app" class="btn btn-primary">Getting started</a>
-        <a href="https://demo.cattr.app" target="_blank" class="btn btn-secondary">Try demo now</a>
+        <h2 data-translatable>
+          <span>What are you waiting for?</span>
+          <span>Чего же вы ждете?</span>
+        </h2>
+        <a href="https://docs.cattr.app" class="btn btn-primary" data-translatable>
+          <span>Getting started</span>
+          <span>Начать</span>
+        </a>
+        <a href="https://demo.cattr.app" target="_blank" class="btn btn-secondary" data-translatable>
+          <span>Try demo now</span>
+          <span>Попробовать демо</span>
+        </a>
       </div>
     </section>
   </main>
@@ -184,19 +260,37 @@
           <br>
           <div class="row link-container">
             <div class="col-md-3">
-              <a href="https://community.cattr.app/public/d/2-terms-conditions">Terms of Service</a><br>
-              <a href="https://docs.cattr.app">Documentation</a><br>
-              <a href="/desktop/">Desktop app</a>
+              <a href="https://community.cattr.app/public/d/2-terms-conditions" data-translatable>
+                <span>Terms of Service</span>
+                <span>Условия использования</span>
+              </a><br>
+              <a href="https://docs.cattr.app" data-translatable>
+                <span>Documentation</span>
+                <span>Документация</span>
+              </a><br>
+              <a href="/desktop/" data-translatable>
+                <span>Desktop app</span>
+                <span>Приложение для компьютера</span>
+              </a>
             </div>
             <div class="col-md-3">
               <a href="https://github.com/cattr-app">Github</a><br>
-              <a href="https://community.cattr.app">Forum</a>
+              <a href="https://community.cattr.app" data-translatable>
+                <span>Community</span>
+                <span>Форум</span>
+              </a>
             </div>
           </div>
           <br>
           <div class="row">
             <div class="col">
-              <p>Made by <a href="https://amazingcat.net">amazingcat</a></p>
+              <p>
+                <span data-translatable>
+                  <span>Made by </span>
+                  <span>Сделано в </span>
+                </span>
+                <a href="https://amazingcat.net">amazingcat</a>
+              </p>
             </div>
           </div>
         </div>
@@ -204,15 +298,19 @@
     </div>
     <div class="cookie_bar row align-items-center justify-content-center">
     <div class="cookie_bar__row row align-items-center justify-content-between">
-      <span class="col cookie_bar__text">
-        We are use cookies to ensure you get the best experience on our website.
+      <span class="col cookie_bar__text" data-translatable>
+        <span>We are use cookies to ensure you get the best experience on our website.</span>
+        <span>Мы используем файлы «cookies» на нашем веб-сайте, чтобы улучшить работу и повысить эффективность сайта.</span>
       </span>
-      <button type="submit" id="cookie_button" class="col-auto btn btn-light cookie_bar__row__button">Get it</button>
+      <button type="submit" id="cookie_button" class="col-auto btn btn-light cookie_bar__row__button" data-translatable>
+       <span>Get it</span> 
+       <span>Понятно</span>
+      </button>
     </div>
   </div>
   </footer>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160871084-1"></script>
-  <script src="js/cookieBar.js" />
+  <script src="bundle.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

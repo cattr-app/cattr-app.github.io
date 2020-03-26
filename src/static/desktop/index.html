@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cattr — Desktop App</title>
+  <title data-translatable>Cattr — Desktop App // Cattr — приложение для компьютера</title>
   <link href="../css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Download Cattr Desktop for your platform">
@@ -23,7 +23,10 @@
       <section id="section-hero" class="container">
         <div class="row align-items-center">
           <div class="col-md-12 col-sm-12">
-            <h1>The last step between <br>you and us</h1>
+            <h1 data-translatable>
+              <span>The last step between <br>you and us</span>
+              <span>Последний шаг <br> между нами</span>
+            </h1>
             <noscript>
               <div class="section-img-text-split-buttons">
                 <a href="https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.dmg" class="btn btn-primary">Download for macOS</a>
@@ -31,18 +34,29 @@
                 <a href="https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.AppImage" class="btn btn-secondary">Linux</a>
               </div>
             </noscript>
-            <div class="section-img-text-split-buttons" id="dl-buttons-container"></div>
-            <p class="text">
-              <span class="text-notice">
-                <b><span class="red">∗ Notice</span></b> that Cattr for Windows is not popular enough yet to pass Microsoft SmartScreen's protection, 
-                  so you probably will experience SmartScreen popup warning on application launch.
-                To allow Cattr to run on your PC, click "More info" then "Run anyway" button in the SmartScreen popup.
-                If you feel unsafe doing this, you can build a desktop application from source code by yourself using the link below.
-              </span>
-              <br><br>
-              Here is the desktop application source code repository: <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">cattr-app/desktop-application</a>.
-            </p>
-            <br>
+            <div class="section-img-text-split-buttons" id="dl-buttons-container"></div>          
+            <div data-translatable>
+              <p class="text">
+                <span class="text-notice">
+                  <b><span class="red">∗ Notice</span></b> that Cattr for Windows is not popular enough yet to pass Microsoft SmartScreen's protection, 
+                    so you probably will experience SmartScreen popup warning on application launch.
+                  To allow Cattr to run on your PC, click "More info" then "Run anyway" button in the SmartScreen popup.
+                  If you feel unsafe doing this, you can build a desktop application from source code by yourself using the link below.
+                </span>
+                <br><br>
+                Here is the desktop application source code repository: <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">cattr-app/desktop-application</a>.
+              </p>
+              
+              <p class="text">
+                <span class="text-notice">
+                  <b><span class="red">* Обратите внимание</span>, что Cattr для Windows еще недостаточно популярен, чтобы пройти защиту Microsoft SmartScreen, поэтому вы, вероятно, увидите всплывающее предупреждение SmartScreen при запуске приложения. 
+                    Чтобы разрешить запуск Cattr на вашем ПК, нажмите «Подробнее», а затем кнопку «Запустить в любом случае» во всплывающем окне SmartScreen. 
+                    Если вы чувствуете себя небезопасно, Вы можете создать приложение для компьютера из исходного кода самостоятельно, используя ссылку ниже.
+                </span>
+                <br><br>
+                Репозиторий исходного кода настольного приложения:: <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">cattr-app/desktop-application</a>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -79,7 +93,7 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="../js/dl.js"></script>
+  <script type="text/javascript" src="../bundle.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160871084-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
