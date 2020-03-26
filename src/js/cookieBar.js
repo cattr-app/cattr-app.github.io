@@ -7,6 +7,9 @@ if (!("cookie" in window.localStorage)) {
 
 function hideBar() {
 	const cookieBar = document.getElementsByClassName("cookie_bar")[0];
-	cookieBar.style.display = "none";
-	window.localStorage.cookie = true;
+
+	if (cookieBar) {
+		cookieBar.style.display = "none";
+		window.localStorage.cookie = true;
+	}
 }
