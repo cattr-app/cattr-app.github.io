@@ -54,6 +54,12 @@ img {
   max-width: 100%;
 }
 
+[type=button] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .text {
   font-family: 'Gilroy-Light', sans-serif;
   font-style: normal;
