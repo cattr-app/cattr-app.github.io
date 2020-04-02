@@ -30,6 +30,7 @@
     }
 
     &_5 {
+      z-index: 0;
       top: -120px;
       left: 52%;
     }
@@ -64,10 +65,6 @@
 .screenshot {
   &-container {
     z-index: 1;
-
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
   }
 
   &_1 {

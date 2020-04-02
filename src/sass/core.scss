@@ -42,29 +42,34 @@ h6 {
 }
 
 a {
-
   font-family: 'Gilroy-Light', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
   color: #59566E;
+}
 
+img {
+  max-width: 100%;
+}
+
+[type=button] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .text {
-
   font-family: 'Gilroy-Light', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
   margin: 30px 0;
-  
 }
 
 .btn {
-
   padding: 16px 32px;
   border-radius: 15px;
   font-family: 'Gilroy-ExtraBold', sans-serif;
@@ -81,18 +86,17 @@ a {
     background-color: white;
     border-color: white;
   }
-
-}
-
-.row {
-
-  max-width: 100%;
-  margin: 0;
-
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span {
-
   z-index: 2;
+}
 
+.red {
+  color: #D95032;
+}
+
+.link-highlighted {
+  font-weight: 800;
+  color: darken($primary, 0.5);
 }
