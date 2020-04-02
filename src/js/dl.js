@@ -30,13 +30,13 @@ const abbriviationMap = {
 const getPlatform = () => {
 
   const ua = navigator.userAgent.toLowerCase();
-  
+
   if (ua.indexOf('mac') > -1)
     return 'mac';
 
   if (ua.indexOf('android') > -1)
     return 'android';
-  
+
   if (ua.indexOf('linux') > -1 || ua.indexOf('x11') > -1)
     return 'linux';
 
@@ -79,13 +79,13 @@ window.addEventListener('load', () => {
 
     if (!firstPlatformTaken) {
 
-      renderedButtons = `<a href="${downloadPaths[platform]}" class="btn btn-primary">Download for ${abbriviationMap[platform]}</a>&nbsp;`;
+      renderedButtons = `<a href="${downloadPaths[platform]}" class="btn btn-primary" onclick="gtag('event', 'download', {'event_category': '${platform}', 'value': 1});">Download for ${abbriviationMap[platform]}</a>&nbsp;`;
       firstPlatformTaken = true;
       return;
 
     }
-      
-    renderedButtons += `<a href="${downloadPaths[platform]}" class="btn btn-secondary">${abbriviationMap[platform]}</a>&nbsp;`;
+
+    renderedButtons += `<a href="${downloadPaths[platform]}" class="btn btn-secondary" onclick="gtag('event', 'download', {'event_category': '${platform}', 'value': 1});">${abbriviationMap[platform]}</a>&nbsp;`;
 
   });
 

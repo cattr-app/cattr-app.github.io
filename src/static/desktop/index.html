@@ -121,6 +121,18 @@
   <meta property="og:image" content="https://cattr.app/resources/logo.svg"/>
   <meta property="og:type" content="profile"/>
   <meta property="og:url" content= "https://cattr.app/desktop/" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160871084-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-160871084-1', {
+      linker: {
+        domains: ['cattr.app', 'community.cattr.app','demo.cattr.app']
+      }
+    });
+  </script>
 </head>
 <body class="full-size-footer">
   <div class="whitened-wrapper">
@@ -169,7 +181,7 @@
                     Если вы чувствуете себя небезопасно, Вы можете создать приложение для компьютера из исходного кода самостоятельно, используя ссылку ниже.
                 </span>
                 <br><br>
-                Репозиторий исходного кода настольного приложения:: <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">cattr-app/desktop-application</a>.
+                Репозиторий исходного кода настольного приложения: <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">cattr-app/desktop-application</a>.
               </p>
             </div>
           </div>
@@ -239,18 +251,6 @@
     </div>
   </footer>
   <script type="text/javascript" src="../bundle.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160871084-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160871084-1', {
-      linker: {
-        domains: ['cattr.app', 'docs.cattr.app','community.cattr.app','demo.cattr.app']
-      }
-    });
-  </script>
   <!-- Start of Rocket.Chat Livechat Script -->
   <script type="text/javascript">
     (function(w, d, s, u) {
