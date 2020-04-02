@@ -3,16 +3,127 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cattr — Desktop App</title>
+  <title data-translatable>Cattr — Desktop App // Cattr — приложение для компьютера</title>
   <link href="../css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Download Cattr Desktop for your platform">
+  <meta name="keywords" content="cattr,time,tracking,download,track,remote,work,start">
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://amazingcat.net",
+        "logo": "https://amazingcat.net/images/logo.png"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Cattr",
+          "item": "https://cattr.app/"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Download"
+        }]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "description": "Free self-hosted open-source time tracking application",
+        "operatingSystem": "win | Mac | Linux",
+        "offers": {
+          "@type": "Offer",
+          "price": 0,
+          "priceCurrency": "USD"
+        },
+        "applicationCategory": "tracker",
+        "applicationSubCategory": "time tracking",
+        "downloadUrl": "https://cattr.app/desktop/",
+        "datePublished": "2020-03-20",
+        "image": "https://cattr.app/resources/logo.svg",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "installUrl": "https://docs.cattr.app/#/en/getting-started/",
+        "fileSize": "210MB"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "description": "Free self-hosted open-source time tracking application",
+        "operatingSystem": "Linux",
+        "offers": {
+          "@type": "Offer",
+          "price": 0,
+          "priceCurrency": "USD"
+        },
+        "applicationCategory": "tracker",
+        "applicationSubCategory": "time tracking",
+        "downloadUrl": "https://github.com/cattr-app",
+        "datePublished": "2020-03-20",
+        "image": "https://cattr.app/resources/logo.svg",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "installUrl": "https://docs.cattr.app/#/en/getting-started/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "datePublished": "2020-03-20",
+        "codeRepository": "https://github.com/cattr-app/backend-application",
+        "codeSampleType": "full",
+        "programmingLanguage": "PHP"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "datePublished": "2020-03-20",
+        "codeRepository": "https://github.com/cattr-app/frontend-application",
+        "codeSampleType": "full",
+        "programmingLanguage": "JavaScript"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "datePublished": "2020-03-20",
+        "codeRepository": "https://github.com/cattr-app/desktop-application",
+        "codeSampleType": "full",
+        "programmingLanguage": "JavaScript"
+      }
+    ]
+  </script>
+  <meta property="og:title" content="Download"/>
+  <meta property="og:site_name" content="Cattr"/>
+  <meta property="og:description" content="Manage your time with ease. Open source time tracking application"/>
+  <meta property="og:image" content="https://cattr.app/resources/logo.svg"/>
+  <meta property="og:type" content="profile"/>
+  <meta property="og:url" content= "https://cattr.app/desktop/" />
 </head>
-
 <body class="full-size-footer">
-  <div class="notice">
-    <b>This is only a public preview &nbsp;/&nbsp; Release date is set to <span id="release-date"></span>, 2020</b>
-  </div>
   <div class="whitened-wrapper">
     <header class="container">
       <div class="row">
@@ -25,19 +136,43 @@
       </div>
     </header>
     <main>
-      <section id="section-hero" class="container" style="margin-bottom: 0px;">
+      <section id="section-hero" class="container">
         <div class="row align-items-center">
           <div class="col-md-12 col-sm-12">
-            <h1>The last step between <br>you and us</h1>
-            <div class="section-img-text-split-buttons">
-              <a href="#" class="btn btn-primary">Download for macOS</a>
-              <a href="#" class="btn btn-secondary">Windows</a>
-              <a href="#" class="btn btn-secondary">Linux</a>
+            <h1 data-translatable>
+              <span>The last step between <br>you and us</span>
+              <span>Последний шаг <br> между нами</span>
+            </h1>
+            <noscript>
+              <div class="section-img-text-split-buttons">
+                <a href="https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.dmg" class="btn btn-primary">Download for macOS</a>
+                <a href="https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.exe" class="btn btn-secondary">Windows<sup><b class="red">∗</b></sup></a>
+                <a href="https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.AppImage" class="btn btn-secondary">Linux</a>
+              </div>
+            </noscript>
+            <div class="section-img-text-split-buttons" id="dl-buttons-container"></div>
+            <div data-translatable>
+              <p class="text">
+                <span class="text-notice">
+                  <b><span class="red">∗ Notice</span></b> that Cattr for Windows is not popular enough yet to pass Microsoft SmartScreen's protection,
+                    so you probably will experience SmartScreen popup warning on application launch.
+                  To allow Cattr to run on your PC, click "More info" then "Run anyway" button in the SmartScreen popup.
+                  If you feel unsafe doing this, you can build a desktop application from source code by yourself using the link below.
+                </span>
+                <br><br>
+                Here is the desktop application source code repository: <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">cattr-app/desktop-application</a>.
+              </p>
+
+              <p class="text">
+                <span class="text-notice">
+                  <b><span class="red">* Обратите внимание</span>, что Cattr для Windows еще недостаточно популярен, чтобы пройти защиту Microsoft SmartScreen, поэтому вы, вероятно, увидите всплывающее предупреждение SmartScreen при запуске приложения.
+                    Чтобы разрешить запуск Cattr на вашем ПК, нажмите «Подробнее», а затем кнопку «Запустить в любом случае» во всплывающем окне SmartScreen.
+                    Если вы чувствуете себя небезопасно, Вы можете создать приложение для компьютера из исходного кода самостоятельно, используя ссылку ниже.
+                </span>
+                <br><br>
+                Репозиторий исходного кода настольного приложения:: <a class="link-highlighted" href="https://github.com/cattr-app/desktop-application">cattr-app/desktop-application</a>.
+              </p>
             </div>
-            <p class="text">
-              You can also build Desktop applicaton <a href="https://github.com/cattr-app/desktop-application">from sources</a>.
-            </p>
-            <br>
           </div>
         </div>
       </section>
@@ -55,27 +190,77 @@
           <br>
           <div class="row link-container">
             <div class="col-md-3">
-              <a href="https://community.cattr.app/public/d/2-terms-conditions">Terms of Service</a><br>
-              <a href="https://docs.cattr.app">Documentation</a><br>
-              <a href="/desktop/">Desktop app</a>
+              <a href="https://community.cattr.app/public/d/2-terms-conditions" data-translatable rel="license">
+                <span>Terms of Service</span>
+                <span>Условия использования</span>
+              </a><br>
+              <a href="https://docs.cattr.app" data-translatable>
+                <span>Documentation</span>
+                <span>Документация</span>
+              </a><br>
+              <a href="/desktop/" data-translatable>
+                <span>Desktop app</span>
+                <span>Приложение для компьютера</span>
+              </a>
             </div>
             <div class="col-md-3">
-              <a href="https://github.com/cattr-app">Github</a><br>
-              <a href="https://community.cattr.app">Forum</a>
+              <a href="https://github.com/cattr-app" rel="vcs-git">Github</a><br>
+              <a href="https://community.cattr.app" data-translatable rel="discussion">
+                <span>Community</span>
+                <span>Форум</span>
+              </a>
             </div>
           </div>
           <br>
           <div class="row">
             <div class="col">
-              <p>Made by <a href="https://amazingcat.net">amazingcat</a></p>
+              <p>
+                <span data-translatable>
+                  <span>Made by </span>
+                  <span>Сделано в </span>
+                </span>
+                <a href="https://amazingcat.net" rel="nofollow">amazingcat</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="cookie_bar row align-items-center justify-content-center">
+      <div class="cookie_bar__row row align-items-center justify-content-between">
+      <span class="col cookie_bar__text" data-translatable>
+        <span>We are use cookies to ensure you get the best experience on our website.</span>
+        <span>Мы используем файлы «cookies» на нашем веб-сайте, чтобы улучшить работу и повысить эффективность сайта.</span>
+      </span>
+        <button type="submit" id="cookie_button" class="col-auto btn btn-light cookie_bar__row__button" data-translatable>
+          <span>Get it</span>
+          <span>Понятно</span>
+        </button>
+      </div>
+    </div>
   </footer>
+  <script type="text/javascript" src="../bundle.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160871084-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <script type="text/javascript" src="/js/main.js"></script>
+    gtag('config', 'UA-160871084-1', {
+      linker: {
+        domains: ['cattr.app', 'docs.cattr.app','community.cattr.app','demo.cattr.app']
+      }
+    });
+  </script>
+  <!-- Start of Rocket.Chat Livechat Script -->
+  <script type="text/javascript">
+    (function(w, d, s, u) {
+      w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+      var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+      j.async = true; j.src = 'https://chat.amazingcat.net/livechat/rocketchat-livechat.min.js?_=201903270000';
+      h.parentNode.insertBefore(j, h);
+    })(window, document, 'script', 'https://chat.amazingcat.net/livechat');
+  </script>
+  <!-- End of Rocket.Chat Livechat Script -->
 </body>
-
 </html>
