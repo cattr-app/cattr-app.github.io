@@ -6,9 +6,131 @@
   <title data-translatable>Cattr — free time tracking app for organizing remote work // Cattr — бесплатное приложение учета времени для организации удаленной работы</title>
   <meta name="description" content="Manage your time with ease. Open source time tracking application">
   <link href="./css/main.css" rel="stylesheet">
+  <meta name="keywords" content="cattr,time,tracking,free,download,tracker,team,open source,management,remote,work,github,home,office">
+  <link href="./css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://amazingcat.net",
+        "logo": "https://amazingcat.net/images/logo.png"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Cattr"
+        }]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "description": "Free self-hosted open-source time tracking application",
+        "operatingSystem": "win | Mac | Linux",
+        "offers": {
+          "@type": "Offer",
+          "price": 0,
+          "priceCurrency": "USD"
+        },
+        "applicationCategory": "tracker",
+        "applicationSubCategory": "time tracking",
+        "downloadUrl": "https://cattr.app/desktop/",
+        "datePublished": "2020-03-20",
+        "image": "https://cattr.app/resources/logo.svg",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "installUrl": "https://docs.cattr.app/#/en/getting-started/",
+        "fileSize": "210MB"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "description": "Free self-hosted open-source time tracking application",
+        "operatingSystem": "Linux",
+        "offers": {
+          "@type": "Offer",
+          "price": 0,
+          "priceCurrency": "USD"
+        },
+        "applicationCategory": "tracker",
+        "applicationSubCategory": "time tracking",
+        "downloadUrl": "https://github.com/cattr-app",
+        "datePublished": "2020-03-20",
+        "image": "https://cattr.app/resources/logo.svg",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "installUrl": "https://docs.cattr.app/#/en/getting-started/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "datePublished": "2020-03-20",
+        "codeRepository": "https://github.com/cattr-app/backend-application",
+        "codeSampleType": "full",
+        "programmingLanguage": "PHP"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "datePublished": "2020-03-20",
+        "codeRepository": "https://github.com/cattr-app/frontend-application",
+        "codeSampleType": "full",
+        "programmingLanguage": "JavaScript"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "author": {
+          "@type": "Organization",
+          "url": "https://amazingcat.net",
+          "logo": "https://amazingcat.net/images/logo.png"
+        },
+        "datePublished": "2020-03-20",
+        "codeRepository": "https://github.com/cattr-app/desktop-application",
+        "codeSampleType": "full",
+        "programmingLanguage": "JavaScript"
+      }
+    ]
+  </script>
+  <meta property="og:title" content="Time tracker"/>
+  <meta property="og:site_name" content="Cattr"/>
+  <meta property="og:description" content="Manage your time with ease. Open source time tracking application"/>
+  <meta property="og:image" content="https://cattr.app/resources/logo.png"/>
+  <meta property="og:type" content="profile"/>
+  <meta property="og:url" content= "https://cattr.app/" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160871084-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-160871084-1', {
+      linker: {
+        domains: ['cattr.app', 'community.cattr.app','demo.cattr.app']
+      }
+    });
+  </script>
+</head>
 <body>
   <header>
     <div class="container">
@@ -22,10 +144,10 @@
         <div class="col align-self-end">
           <span class="menu">
             <div class="menu-item dropdown">
-              <span class="dropdown-toggle" type="button" data-toggle="dropdown" data-translatable>
+              <a class="dropdown-toggle" type="button" data-toggle="dropdown" data-translatable>
                 <span>EN</span>
                 <span>RU</span>
-              </span>
+              </a>
               <div class="dropdown-menu dropdown-menu-right" >
                 <a class="dropdown-item language-switch-item" href="#" data-language="en">English</a>
                 <a class="dropdown-item language-switch-item" href="#" data-language="ru">Русский</a>
@@ -92,7 +214,7 @@
         <div class="shrinked">
           <p class="text" data-translatable>
             <span>Cattr is an open-source time tracking solution, designed to be flawlessly integrated with your infrastructure. Superpowered with features like built-in screenshot capture and activity detection, it's a great instrument to boost your team's performance straight to the top.</span>
-            <span>Cattr - это бесплатная программа для отслеживания времени, которая размещается на вашем сервере, делает скриншоты и отслеживает активность во время работы. 
+            <span>Cattr - это бесплатная программа для отслеживания времени, которая размещается на вашем сервере, делает скриншоты и отслеживает активность во время работы.
              Cattr бесплатный, имеет открытый исходный код, хранит все данные на вашем сервере, и помогает сделать удаленную работу эффективной.</span>
           </p>
         </div>
@@ -113,7 +235,7 @@
           </h4>
           <p class="text" data-translatable>
             <span>Community version is available for everyone for free under SSPL license. Forever.</span>
-            <span>Код приложения в Community версии доступен всем бесплатно по лицензии SSPL. Навсегда.</span> 
+            <span>Код приложения в Community версии доступен всем бесплатно по лицензии SSPL. Навсегда.</span>
           </p>
         </article>
 
@@ -178,8 +300,9 @@
               </p>
             </div>
           </div>
-          <div class="col-md-7 order-md-first screenshot-container">
+          <div class="col-md-7 order-md-first screenshot-container" itemscope itemtype="http://schema.org/ImageObject">
             <img class="screenshot shadow rounded" src="resources/feature-dashboard.png" alt="Screenshot of the Dashboard page" />
+            <meta itemprop="description" content="dashboard screenshots schedule diagram chart working time"/>
           </div>
         </div>
       </div>
@@ -204,8 +327,9 @@
               </p>
             </div>
           </div>
-          <div class="col-md-7 screenshot-container">
+          <div class="col-md-7 screenshot-container" itemscope itemtype="http://schema.org/ImageObject">
             <img id="screenshot_3" class="screenshot rounded shadow w-100" src="resources/feature-project-report.png" alt="Screenshot of the Project Report page" />
+            <meta itemprop="description" content="download report work time csv pdf xls team track invoice"/>
           </div>
         </div>
       </div>
@@ -260,7 +384,7 @@
           <br>
           <div class="row link-container">
             <div class="col-md-3">
-              <a href="https://community.cattr.app/public/d/2-terms-conditions" data-translatable>
+              <a href="https://community.cattr.app/public/d/2-terms-conditions" data-translatable rel="license">
                 <span>Terms of Service</span>
                 <span>Условия использования</span>
               </a><br>
@@ -274,8 +398,8 @@
               </a>
             </div>
             <div class="col-md-3">
-              <a href="https://github.com/cattr-app">Github</a><br>
-              <a href="https://community.cattr.app" data-translatable>
+              <a href="https://github.com/cattr-app" rel="vcs-git">Github</a><br>
+              <a href="https://community.cattr.app" data-translatable rel="discussion">
                 <span>Community</span>
                 <span>Форум</span>
               </a>
@@ -289,7 +413,7 @@
                   <span>Made by </span>
                   <span>Сделано в </span>
                 </span>
-                <a href="https://amazingcat.net">amazingcat</a>
+                <a href="https://amazingcat.net" rel="nofollow">amazingcat</a>
               </p>
             </div>
           </div>
@@ -303,25 +427,13 @@
         <span>Мы используем файлы «cookies» на нашем веб-сайте, чтобы улучшить работу и повысить эффективность сайта.</span>
       </span>
       <button type="submit" id="cookie_button" class="col-auto btn btn-light cookie_bar__row__button" data-translatable>
-       <span>Get it</span> 
+       <span>Get it</span>
        <span>Понятно</span>
       </button>
     </div>
   </div>
   </footer>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160871084-1"></script>
   <script src="bundle.js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160871084-1', {
-      linker: {
-        domains: ['cattr.app', 'docs.cattr.app','community.cattr.app','demo.cattr.app']
-      }
-    });
-  </script>
   <!-- Start of Rocket.Chat Livechat Script -->
   <script type="text/javascript">
     (function(w, d, s, u) {
