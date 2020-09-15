@@ -79,13 +79,13 @@ window.addEventListener('load', () => {
 
     if (!firstPlatformTaken) {
 
-      renderedButtons = `<a href="${downloadPaths[platform]}" class="btn btn-primary" onclick="gtag('event', 'download', {'event_category': '${platform}', 'value': 1});">Download for ${abbriviationMap[platform]}</a>&nbsp;`;
+      renderedButtons = `<a href="${downloadPaths[platform]}" class="btn btn-primary download-link" data-type="${platform}">Download for ${abbriviationMap[platform]}</a>&nbsp;`;
       firstPlatformTaken = true;
       return;
 
     }
 
-    renderedButtons += `<a href="${downloadPaths[platform]}" class="btn btn-secondary" onclick="gtag('event', 'download', {'event_category': '${platform}', 'value': 1});">${abbriviationMap[platform]}</a>&nbsp;`;
+    renderedButtons += `<a href="${downloadPaths[platform]}" class="btn btn-secondary download-link" data-type="${platform}">${abbriviationMap[platform]}</a>&nbsp;`;
 
   });
 
