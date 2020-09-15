@@ -3,7 +3,7 @@ import domI18n from 'dom-i18n/dist/dom-i18n.min.js';
 const i18n = domI18n({
   selector: '[data-translatable]',
   separator: ' // ',
-  languages: ['en', 'ru'],
+  languages: ['en', 'ru', 'da'],
   translatableAttr: 'title',
   defaultLanguage: 'en'
 });
