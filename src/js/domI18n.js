@@ -16,7 +16,10 @@ const getLangCookie = () => {
 // Set root domain cookie, ex: *.cattr.app
 const setLangCookie = (lang) => {
   const rootDomain = location.hostname.split('.').reverse().splice(0,2).reverse().join('.');
-  document.cookie = `lang=${lang}; domain=${rootDomain}`;
+
+  const date = new Date()
+  date.setTime(+ date + (365 * 86400000));
+  document.cookie = `lang=${lang}; domain=${rootDomain}; expires=${date.toGMTString()}`;
 };
 
 // Get the browser language
