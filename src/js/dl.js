@@ -4,9 +4,9 @@
  */
 const downloadPaths = {
 
-  mac: 'https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.dmg',
-  win: 'https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.exe',
-  linux: 'https://dl.cattr.app/desktop/2.3.1/cattr-2.3.1.AppImage'
+  mac: 'https://dl.cattr.app/desktop/2.4.1/cattr-2.4.1.dmg',
+  win: 'https://dl.cattr.app/desktop/2.4.1/cattr%202.4.1.exe',
+  linux: 'https://dl.cattr.app/desktop/2.4.1/cattr-2.4.1.AppImage'
 
 };
 
