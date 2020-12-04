@@ -81,6 +81,10 @@ module.exports = {
       {
         from: path.resolve(__dirname, "src", "static"),
         to: "."
+      },
+      {
+        from: path.resolve(__dirname, "src", "php"),
+        to: "."
       }
     ]),
     new MiniCssExtractPlugin({
