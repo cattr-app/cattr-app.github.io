@@ -1,15 +1,20 @@
-if (!("cookie" in window.localStorage)) {
-	const button = document.getElementById("cookie_button");
-	button.onclick = hideBar;
-} else {
-	hideBar();
-}
+document.addEventListener('DOMContentLoaded', () => {
 
-function hideBar() {
-	const cookieBar = document.getElementsByClassName("cookie_bar")[0];
+  const cookieBar = document.getElementsByClassName('cookie_bar')[0];
 
-	if (cookieBar) {
-		cookieBar.style.display = "none";
-		window.localStorage.cookie = true;
-	}
-}
+  const hideCookieBanner = () => {
+
+    cookieBar.style.display = 'none';
+    window.localStorage.cookie = true;
+
+  };
+
+  // Show cookie banner if localStorage flag is not set
+  if (!('cookie' in window.localStorage)) {
+
+    cookieBar.style.display = 'flex';
+    document.getElementById('cookie_button').addEventListener('click', hideCookieBanner);
+
+  }
+
+});

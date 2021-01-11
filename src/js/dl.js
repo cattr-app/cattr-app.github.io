@@ -1,94 +1,95 @@
-/**
- * Links to binaries on distribution server
- * @type {Object}
- */
-const downloadPaths = {
+document.addEventListener('DOMContentLoaded', async () => {
 
-  mac: 'https://dl.cattr.app/desktop/latest/cattr.dmg',
-  win: 'https://dl.cattr.app/desktop/latest/cattr.exe',
-  linux: 'https://dl.cattr.app/desktop/latest/cattr.AppImage'
+  /**
+   * Human-readable map for distribution types
+   * @type {Map.<string, string>}
+   */
+  const DISTRIBUTION_TYPES = new Map([
+    ['dmg', 'DMG Package'],
+    ['mas', 'macOS App Store'],
+    ['msi', 'Installer'],
+    ['exe', 'Portable'],
+    ['mss', 'Microsoft Store'],
+    ['appimage', 'AppImage'],
+    ['deb', 'Deb package'],
+    ['apt', 'APT repository'],
+    ['tgz', 'Portable'],
+  ]);
 
-};
+  /**
+   * Human-readable architecture for each platform
+   * @type {Map.<string, string>}
+   */
+  const PLATFORM_ARCH = new Map([
+    ['mac', 'intel'],
+    ['windows', 'x64'],
+    ['linux', 'amd64'],
+  ]);
 
-/**
- * Abbriviation to full OS name map
- * @type {Object}
- */
-const abbriviationMap = {
+  /**
+   * Fetch an artifacts manifest
+   * @async
+   * @param {String} platform Application platform (linux, mac, windows)
+   * @returns {Promise.<Error|Object>}
+   */
+  const fetchManifest = async platform => {
 
-  mac: 'macOS',
-  win: 'Windows<sup><b class="red">∗</b></sup>',
-  linux: 'Linux'
+    if (typeof platform === 'undefined' || !['linux', 'mac', 'windows'].includes(platform))
+      return null;
 
-};
+    try {
 
-/**
- * Returns current platform
- * You shouldn't really rely on this function
- * @returns {String} Detected platform (mac, linux, win, ios, android, unknown)
- */
-const getPlatform = () => {
+      const req = await fetch(`https://dl.cattr.app/desktop/manifests/release-${platform}.json`);
+      const data = await req.json();
 
-  const ua = navigator.userAgent.toLowerCase();
+      if (!data || typeof data.platform === 'undefined' || typeof data.version === 'undefined' || typeof data.artifacts === 'undefined')
+        return null;
 
-  if (ua.indexOf('mac') > -1)
-    return 'mac';
+      return data;
 
-  if (ua.indexOf('android') > -1)
-    return 'android';
+    } catch (error) {
 
-  if (ua.indexOf('linux') > -1 || ua.indexOf('x11') > -1)
-    return 'linux';
-
-  if (ua.indexOf('windows') > -1)
-    return 'win';
-
-  if (ua.indexOf('iphone') > -1 || ua.indexOf('ipad') > -1 || ua.indexOf('ipod') > -1)
-    return 'ios';
-
-  return 'unknown';
-
-};
-
-window.addEventListener('load', () => {
-
-  const dlButtonsContainer = document.getElementById('dl-buttons-container');
-  if (!dlButtonsContainer)
-    return;
-
-  const currentPlatform = getPlatform();
-  const platforms = new Set(['mac', 'win', 'linux']);
-  const buttonsOrder = new Set();
-
-  // If this is not supported desktop platform, show buttons equally
-  if (![ 'win', 'linux', 'mac' ].includes(currentPlatform)) {
-
-    buttonsOrder.add('mac', 'linux', 'win');
-
-  } else {
-
-    buttonsOrder.add(currentPlatform);
-    platforms.forEach(el => buttonsOrder.add(el));
-
-  }
-
-  // Render buttons
-  let renderedButtons = '';
-  let firstPlatformTaken = false;
-  buttonsOrder.forEach((platform) => {
-
-    if (!firstPlatformTaken) {
-
-      renderedButtons = `<a href="${downloadPaths[platform]}" class="btn btn-primary download-link" data-type="${platform}">Download for ${abbriviationMap[platform]}</a>&nbsp;`;
-      firstPlatformTaken = true;
-      return;
+      return null;
 
     }
 
-    renderedButtons += `<a href="${downloadPaths[platform]}" class="btn btn-secondary download-link" data-type="${platform}">${abbriviationMap[platform]}</a>&nbsp;`;
+  };
 
-  });
+  const handleManifest = async (platform, manifest) => {
 
-  dlButtonsContainer.innerHTML = renderedButtons;
+    if (typeof platform === 'undefined' || !['linux', 'mac', 'windows'].includes(platform))
+      return null;
+
+    if (manifest === null)
+      return null;
+
+    const versionBadge = document.getElementById(`dl-${platform}-version`);
+    const defaultLink = document.getElementById(`dl-${platform}-default`);
+    const artifactsBlock = document.getElementById(`dl-${platform}-artifacts`);
+
+    // Hide default noscript links
+    defaultLink.style.display = 'none';
+
+    // Set version label
+    versionBadge.innerHTML = `${manifest.version} ${PLATFORM_ARCH.get(platform)}`;
+
+    // Build artifact download links
+    const artifacts = manifest.artifacts
+
+      // Build a <a> tag from each artifact
+      .map(artifact => `<a class="download-link" href="${artifact.link}"><b>${DISTRIBUTION_TYPES.get(artifact.format)}</b></a><br><br>`)
+
+      // Join them into single string
+      .join();
+
+    // Append DOM content
+    artifactsBlock.innerHTML = artifacts;
+    return true;
+
+  };
+
+  handleManifest('linux', await fetchManifest('linux'));
+  handleManifest('mac', await fetchManifest('mac'));
+  handleManifest('windows', await fetchManifest('windows'));
 
 });

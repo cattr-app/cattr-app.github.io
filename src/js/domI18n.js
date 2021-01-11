@@ -1,29 +1,35 @@
-import domI18n from 'dom-i18n/dist/dom-i18n.min.js';
+import domI18n from 'dom-i18n/dist/dom-i18n.min';
 
 const i18n = domI18n({
   selector: '[data-translatable]',
   separator: ' // ',
   languages: ['en', 'ru', 'da'],
   translatableAttr: 'title',
-  defaultLanguage: 'en'
+  defaultLanguage: 'en',
 });
 
 const getLangCookie = () => {
+
   const v = document.cookie.match('(^|;) ?lang=([^;]*)(;|$)');
   return v ? v[2] : null;
+
 };
 
 // Set root domain cookie, ex: *.cattr.app
-const setLangCookie = (lang) => {
-  const rootDomain = location.hostname.split('.').reverse().splice(0,2).reverse().join('.');
+const setLangCookie = lang => {
 
-  const date = new Date()
-  date.setTime(+ date + (365 * 86400000));
+  const rootDomain = document.location.hostname.split('.').reverse().splice(0, 2).reverse()
+    .join('.');
+
+  const date = new Date();
+  date.setTime(+date + (365 * 86400000));
   document.cookie = `lang=${lang}; domain=${rootDomain}; expires=${date.toGMTString()}`;
+
 };
 
 // Get the browser language
 const getUserLang = () => {
+
   const userLang = navigator.language;
 
   if (userLang.includes('ru'))
@@ -34,6 +40,7 @@ const getUserLang = () => {
 
   // Fallback language
   return 'en';
+
 };
 
 // Set current language
@@ -42,13 +49,19 @@ const userLang = getLangCookie() || getUserLang();
 i18n.changeLanguage(userLang);
 
 // Change language on button click
-for (const button of document.querySelectorAll('.language-switch-item')) {
-  button.addEventListener('click', function (e) {
-    e.preventDefault();
+document
+  .querySelectorAll('.language-switch-item')
+  .forEach(button => {
 
-    const selectedLang = e.target.dataset.language;
+    button.addEventListener('click', e => {
 
-    i18n.changeLanguage(selectedLang);
-    setLangCookie(selectedLang)
-  })
-}
+      e.preventDefault();
+
+      const selectedLang = e.target.dataset.language;
+
+      i18n.changeLanguage(selectedLang);
+      setLangCookie(selectedLang);
+
+    });
+
+  });

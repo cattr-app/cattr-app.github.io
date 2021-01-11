@@ -69,6 +69,15 @@ img {
   margin: 30px 0;
 }
 
+.download-link {
+  font-weight: 700;
+  color: #5b49bc;
+}
+
+.download-link:hover {
+  text-decoration: none;
+}
+
 .btn {
   padding: 16px 32px;
   border-radius: 15px;
@@ -99,4 +108,12 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 .link-highlighted {
   font-weight: 800;
   color: darken($primary, 0.5);
+}
+
+.badge-version {
+
+  font-weight: 400;
+  font-size: 12px;
+  vertical-align: middle;
+
 }
