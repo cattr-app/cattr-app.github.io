@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', async () => {
 
+  if (!window.cattrDownloadsEnabled)
+    return;
+
   /**
    * Human-readable map for distribution types
    * @type {Map.<string, string>}
