@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     ['appimage', 'AppImage'],
     ['deb', 'Deb package'],
     ['apt', 'APT repository'],
-    ['tgz', 'Portable'],
+    ['tgz', 'Tarball'],
   ]);
 
   /**
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
 
-      const req = await fetch(`https://dl.cattr.app/desktop/manifests/release-${platform}.json`);
+      const req = await fetch(`https://dl.cattr.app/manifests/release-${platform}.json`);
       const data = await req.json();
 
       if (!data || typeof data.platform === 'undefined' || typeof data.version === 'undefined' || typeof data.artifacts === 'undefined')
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       .map(artifact => `<a class="download-link" href="${artifact.link}"><b>${DISTRIBUTION_TYPES.get(artifact.format)}</b></a><br><br>`)
 
       // Join them into single string
-      .join();
+      .join('');
 
     // Append DOM content
     artifactsBlock.innerHTML = artifacts;
