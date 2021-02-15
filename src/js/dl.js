@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     ['dmg', 'DMG Package'],
     ['mas', 'macOS App Store'],
     ['msi', 'Installer'],
+    ['nsis', 'Installer'],
     ['exe', 'Portable'],
     ['mss', 'Microsoft Store'],
     ['appimage', 'AppImage'],
