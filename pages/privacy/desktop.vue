@@ -1,60 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Start of Rocket.Chat Livechat Script -->
-  <script type="text/javascript">
-    /* eslint-disable */
-    (function (w, d, s, u) {
-
-      w.RocketChat = function (c) {
-
-        w.RocketChat._.push(c);
-
-      }; w.RocketChat._ = []; w.RocketChat.url = u;
-      const h = d.getElementsByTagName(s)[0]; const
-        j = d.createElement(s);
-      j.async = true; j.src = 'https://amatalk.with.amazingcat.net/livechat/rocketchat-livechat.min.js?_=201903270000';
-      h.parentNode.insertBefore(j, h);
-
-    }(window, document, 'script', 'https://amatalk.with.amazingcat.net/livechat'));
-  </script>
-  <meta charset="UTF-8">
-  <title>Cattr — Desktop Privacy Policy</title>
-  <link href="../../css/main.css" rel="stylesheet">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Download Cattr Desktop for your platform" name="description">
-  <meta content="cattr,time,tracking,download,track,remote,work,start" name="keywords">
-  <meta content="Download" property="og:title" />
-  <meta content="Cattr" property="og:site_name" />
-  <meta content="Manage your time with ease. Open source time tracking application" property="og:description" />
-  <meta content="https://cattr.app/resources/logo.png" property="og:image" />
-  <meta content="profile" property="og:type" />
-  <meta content="https://cattr.app/desktop/" property="og:url" />
-</head>
-
-<body class="full-size-footer">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-N3HR36N"
-      style="display:none;visibility:hidden" width="0"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="whitened-wrapper">
-    <header class="container">
-      <div class="row">
-        <div class="col align-self-start">
-          <a class="logo-plus-title no-decoration" href="/">
-            <img alt="Cattr logotype with a cat inside of clock face" class="logotype" src="../../resources/logo.svg">
-            <h3 class="software-title margin">Cattr</h3>
-          </a>
-        </div>
-      </div>
-    </header>
+<template>
+  <div>
+    <Navbar />
     <main>
-      <section class="container" id="section-hero">
+      <section id="section-hero" class="container">
         <div class="row align-items-center">
           <div class="col-md-12 col-sm-12">
-
             <!-- Heading -->
             <h1>Privacy Policy for Cattr Desktop</h1>
             <h5>Effective date: December 1st, 2020</h5>
@@ -63,16 +13,16 @@
             <!-- Intro -->
             <article>
               <p>
-                Amazingcat LLC ("us", "we", or "our") operates the https://cattr.app/ website, incl. associated Cattr Desktop 
+                Amazingcat LLC ("us", "we", or "our") operates the https://cattr.app/ website, incl. associated Cattr Desktop
                 application (the "Service", or “Cattr”).
               </p>
               <p>
-                This page informs you of our policies regarding the collection, use, 
+                This page informs you of our policies regarding the collection, use,
                 and disclosure of personal data when you use our Service and the choices you have associated with that data.
               </p>
               <p>
-                We use your data to provide and improve the Service. By using the Service, you agree to the collection and use 
-                of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in 
+                We use your data to provide and improve the Service. By using the Service, you agree to the collection and use
+                of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in
                 this Privacy Policy have the same meanings as in our Terms and Conditions.
               </p>
             </article>
@@ -84,24 +34,24 @@
 
               <h5>Instance administrators are responsible for user privacy</h5>
               <p>
-                There is only one way of using Cattr — via self-managed installation, also known as "on-premises deployment." 
-                Instance's administrator or the organization behind the administrator is in response to ensuring the privacy 
-                of Cattr users. We aim to help by providing features in our products and services to make it easier. We also 
-                provide this policy to explain what we do as a "helping hand"/data processor for administrators in case we 
+                There is only one way of using Cattr — via self-managed installation, also known as "on-premises deployment."
+                Instance's administrator or the organization behind the administrator is in response to ensuring the privacy
+                of Cattr users. We aim to help by providing features in our products and services to make it easier. We also
+                provide this policy to explain what we do as a "helping hand"/data processor for administrators in case we
                 process personal data of users.
               </p>
-              
+
               <h5>You remain in control of your personal data</h5>
               <p>
-                We cannot access your data in a self-management instance of Cattr. Administrators can connect Cattr instances 
-                under their control to third-party services (like Authentication Providers or Task Integrations), so third-party 
-                privacy policies may apply to specific installations. In our hosted offering, we only process your data to provide 
+                We cannot access your data in a self-management instance of Cattr. Administrators can connect Cattr instances
+                under their control to third-party services (like Authentication Providers or Task Integrations), so third-party
+                privacy policies may apply to specific installations. In our hosted offering, we only process your data to provide
                 you the service in the name of the administrators, who still have control over the configuration of their instances.
               </p>
 
               <h5>We don't sell your data</h5>
               <p>
-                We don't sell your data. We provide an entirely free Community Edition of Cattr and charge customers for additional 
+                We don't sell your data. We provide an entirely free Community Edition of Cattr and charge customers for additional
                 extensions, hosted offerings, or dedicated support. What you process within Cattr is yours and stays yours.
               </p>
             </article>
@@ -110,19 +60,19 @@
             <!-- Definitions -->
             <article>
               <h3>Definitions</h3>
-              
+
               <h5>Service</h5>
               <p>Service means the Cattr Desktop application.</p>
 
               <h5>Personal Data</h5>
               <p>
-                Personal Data means data about a living individual who can be identified from those data (or from those and other 
+                Personal Data means data about a living individual who can be identified from those data (or from those and other
                 information either in our possession or likely to come into our possession).
               </p>
 
               <h5>Usage Data</h5>
               <p>
-                Usage Data is data collected automatically either generated by the use of the Service or from the Service infrastructure 
+                Usage Data is data collected automatically either generated by the use of the Service or from the Service infrastructure
                 itself (for example, the duration of a page visit).
               </p>
 
@@ -131,14 +81,14 @@
 
               <h5>Data Controller</h5>
               <p>
-                Data Controller means the natural or legal person who (either alone or jointly or in common with other persons) 
-                determines the purposes for which and the manner in which any personal information are, or are to be, processed. 
+                Data Controller means the natural or legal person who (either alone or jointly or in common with other persons)
+                determines the purposes for which and the manner in which any personal information are, or are to be, processed.
                 For the purpose of this Privacy Policy, we are a Data Controller of your Personal Data.
               </p>
 
               <h5>Data Processors (or Service Providers)</h5>
               <p>
-                Data Processor (or Service Provider) means any natural or legal person who processes the data on behalf of the Data 
+                Data Processor (or Service Provider) means any natural or legal person who processes the data on behalf of the Data
                 Controller. We may use the services of various Service Providers in order to process your data more effectively.
               </p>
 
@@ -159,7 +109,7 @@
 
               <p>We don't gather or store any personal information from Service for self-managed instances. </p>
               <p>
-                However, Service may request or gather personal data to interact with your Cattr Server instance. 
+                However, Service may request or gather personal data to interact with your Cattr Server instance.
                 This data will be used only within your company and won't be shared with us.
               </p>
 
@@ -176,14 +126,14 @@
 
               <h5>Usage Data</h5>
               <p>
-                We may collect statistical beacons containing information about your operating system (type, version, CPU architecture), 
-                Service information (desktop application type, release number), an identifier of associated Cattr Server Instance. 
+                We may collect statistical beacons containing information about your operating system (type, version, CPU architecture),
+                Service information (desktop application type, release number), an identifier of associated Cattr Server Instance.
                 Usage data sharing can be disabled in Cattr Desktop settings.
               </p>
 
               <h5>Error Reporting</h5>
               <p>
-                We may collect error reports from Service containing information about specific error occurrence and 
+                We may collect error reports from Service containing information about specific error occurrence and
                 platform information, including:
               </p>
               <ul>
@@ -193,12 +143,11 @@
                 <li>Error metadata — recent log file entries and stack trace</li>
               </ul>
               <p>
-                We aim not to collect any personal data within error reports, but there might be rare occurrences when personal data 
-                from log files can be logged as error metadata and shared with us. Any data gathered this way will be removed from our 
-                error reporting system as soon as we detect such an incident. We won't use this data for any purposes. Error reporting 
+                We aim not to collect any personal data within error reports, but there might be rare occurrences when personal data
+                from log files can be logged as error metadata and shared with us. Any data gathered this way will be removed from our
+                error reporting system as soon as we detect such an incident. We won't use this data for any purposes. Error reporting
                 can be disabled in Cattr Desktop settings.
               </p>
-              
             </article>
             <hr>
 
@@ -222,8 +171,8 @@
             <article>
               <h3>Legal Basis for Processing Personal Data Under General Data Protection Regulation (GDPR)</h3>
               <p>
-                If you are from the European Economic Area (EEA), Amazingcat LLC legal basis for collecting and 
-                using the personal information described in this Privacy Policy depends on the Personal Data we 
+                If you are from the European Economic Area (EEA), Amazingcat LLC legal basis for collecting and
+                using the personal information described in this Privacy Policy depends on the Personal Data we
                 collect and the specific context in which we collect it.
               </p>
               <p>Amazingcat LLC may process your Personal Data because:</p>
@@ -241,9 +190,9 @@
             <article>
               <h3>Retention of Data</h3>
               <p>
-                We will retain your Personal Data only for as long as is necessary for the purposes set out 
-                in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to 
-                comply with our legal obligations (for example, if we are required to retain your data to comply 
+                We will retain your Personal Data only for as long as is necessary for the purposes set out
+                in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to
+                comply with our legal obligations (for example, if we are required to retain your data to comply
                 with applicable laws), resolve disputes, and enforce our legal agreements and policies.
               </p>
             </article>
@@ -253,9 +202,9 @@
             <article>
               <h3>Transfer of Data</h3>
               <p>
-                Your information, including Personal Data, may be transferred to — and maintained on — computers 
-                located outside of your state, province, country or other governmental jurisdiction where the data 
-                protection laws may differ than those from your jurisdiction. We will take all steps reasonably 
+                Your information, including Personal Data, may be transferred to — and maintained on — computers
+                located outside of your state, province, country or other governmental jurisdiction where the data
+                protection laws may differ than those from your jurisdiction. We will take all steps reasonably
                 necessary to ensure that your data is treated securely and in accordance with this Privacy Policy.
               </p>
             </article>
@@ -264,23 +213,29 @@
             <!-- Disclosure of Data -->
             <article>
               <h3>Disclosure of Data</h3>
-              <h4>Business Transaction</h5>
+              <h4>
+                Business Transaction
+              </h4>
               <p>
-                If Amazingcat LLC is involved in a merger, acquisition or asset sale, your Personal Data may be 
-                transferred. We will provide notice before your Personal Data is transferred and becomes subject 
+                If Amazingcat LLC is involved in a merger, acquisition or asset sale, your Personal Data may be
+                transferred. We will provide notice before your Personal Data is transferred and becomes subject
                 to a different Privacy Policy.
               </p>
               <br>
 
-              <h4>Disclosure for Law Enforcement</h5>
+              <h4>
+                Disclosure for Law Enforcement
+              </h4>
               <p>
-                Under certain circumstances, Amazingcat LLC may be required to disclose your Personal Data if 
-                required to do so by law or in response to valid requests by public authorities (e.g. a court 
+                Under certain circumstances, Amazingcat LLC may be required to disclose your Personal Data if
+                required to do so by law or in response to valid requests by public authorities (e.g. a court
                 or a government agency).
               </p>
               <br>
 
-              <h4>Legal Requirements</h5>
+              <h4>
+                Legal Requirements
+              </h4>
               <p>Amazingcat LLC may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
               <ul>
                 <li>To comply with a legal obligation</li>
@@ -296,8 +251,8 @@
             <article>
               <h3>Security of Data</h3>
               <p>
-                The security of your data is important to us, but remember that no method of transmission over the Internet, 
-                or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect 
+                The security of your data is important to us, but remember that no method of transmission over the Internet,
+                or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect
                 your Personal Data, we cannot guarantee its absolute security.
               </p>
             </article>
@@ -307,11 +262,11 @@
             <article>
               <h3>Service Providers</h3>
               <p>
-                We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the 
+                We may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the
                 Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.
               </p>
               <p>
-                These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated 
+                These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated
                 not to disclose or use it for any other purpose.
               </p>
             </article>
@@ -321,15 +276,15 @@
             <article>
               <h3>Your Data Protection Rights Under General Data Protection Regulation (GDPR)</h3>
               <p>
-                If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Amazingcat LLC 
+                If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Amazingcat LLC
                 aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.
               </p>
               <p>If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.</p>
               <p>In certain circumstances, you have the following data protection rights:</p>
               <ul>
                 <li>
-                  The right to access, update or to delete the information we have on you. Whenever made possible, you can access, update or request 
-                  deletion of your Personal Data directly within your account settings section. If you are unable to perform these actions yourself, 
+                  The right to access, update or to delete the information we have on you. Whenever made possible, you can access, update or request
+                  deletion of your Personal Data directly within your account settings section. If you are unable to perform these actions yourself,
                   please contact us to assist you.
                 </li>
                 <li>The right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete.</li>
@@ -340,7 +295,7 @@
               </ul>
               <p>Please note that we may ask you to verify your identity before responding to such requests.</p>
               <p>
-                You have the right to complain to a Data Protection Authority about our collection and use of your Personal Data. 
+                You have the right to complain to a Data Protection Authority about our collection and use of your Personal Data.
                 For more information, please contact your local data protection authority in the European Economic Area (EEA).
               </p>
             </article>
@@ -350,8 +305,8 @@
             <article>
               <h3>Links to Other Sites</h3>
               <p>
-                Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed 
-                to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and 
+                Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed
+                to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and
                 assume no responsibility for the content, privacy policies or practices of any third party sites or services.
               </p>
             </article>
@@ -362,8 +317,8 @@
               <h3>Children's Privacy</h3>
               <p>Our Service does not address anyone under the age of 13 ("Children").</p>
               <p>
-                We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian 
-                and you are aware that your child has provided us with Personal Data, please contact us. If we become aware that we have collected 
+                We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian
+                and you are aware that your child has provided us with Personal Data, please contact us. If we become aware that we have collected
                 Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.
               </p>
             </article>
@@ -373,7 +328,7 @@
             <article>
               <h3>Changes to This Privacy Policy</h3>
               <p>
-                We may update our Privacy Policy from time to time. The latest version of the policy will be posted on the https://cattr.app/ site. 
+                We may update our Privacy Policy from time to time. The latest version of the policy will be posted on the https://cattr.app/ site.
                 You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
               </p>
             </article>
@@ -387,76 +342,26 @@
                 <li>By visiting this page on our website: <a href="https://amazingcat.net/">https://amazingcat.net/</a></li>
               </ul>
             </article>
-
           </div>
         </div>
       </section>
     </main>
+    <Footer />
   </div>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col align-self-start">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="software-title">Cattr</h3><br>
-            </div>
-          </div>
-          <br>
-          <div class="row link-container">
-            <div class="col-md-3">
-              <a data-translatable href="https://community.cattr.app/public/d/2-terms-conditions" rel="license">
-                <span>Terms of Service</span>
-                <span>Условия использования</span>
-              </a><br>
-              <a data-translatable href="https://docs.cattr.app">
-                <span>Documentation</span>
-                <span>Документация</span>
-              </a><br>
-              <a data-translatable href="/desktop/">
-                <span>Desktop app</span>
-                <span>Приложение для компьютера</span>
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="https://github.com/cattr-app" rel="vcs-git">Github</a><br>
-              <a data-translatable href="https://community.cattr.app" rel="discussion">
-                <span>Community</span>
-                <span>Форум</span>
-              </a>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col">
-              <p>
-                <span data-translatable>
-                  <span>Made by </span>
-                  <span>Сделано в </span>
-                </span>
-                <a href="https://amazingcat.net" rel="nofollow">amazingcat</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cookie_bar row align-items-center justify-content-center" style='display: none'>
-      <div class="cookie_bar__row row align-items-center justify-content-between">
-        <span class="col cookie_bar__text" data-translatable>
-          <span>We are use cookies to ensure you get the best experience on our website.</span>
-          <span>Мы используем файлы «cookies» на нашем веб-сайте, чтобы улучшить работу и повысить
-            эффективность сайта.</span>
-        </span>
-        <button class="col-auto btn btn-light cookie_bar__row__button" data-translatable id="cookie_button"
-          type="submit">
-          <span>Got it</span>
-          <span>Понятно</span>
-        </button>
-      </div>
-    </div>
-  </footer>
-  <script src="../../bundle.js" type="text/javascript"></script>
-</body>
+</template>
 
-</html>
+<script lang="ts">
+import Vue from 'vue'
+import Navbar from '../../components/Navbar.vue'
+import Footer from '../../components/Footer.vue'
+
+export default Vue.extend({
+  components: { Navbar, Footer },
+  layout: 'landing',
+  head () {
+    return {
+      title: 'Cattr Privacy — Desktop'
+    }
+  }
+})
+</script>

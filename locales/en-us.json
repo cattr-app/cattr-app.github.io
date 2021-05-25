@@ -1,0 +1,5 @@
+{
+  "DOWNLOAD_RED_SS_WARN": "∗ Notice ",
+  "DOWNLOAD_SS_NOTICE": "that Cattr for Windows is not popular enough yet to pass Microsoft SmartScreen's protection, so you probably will experience SmartScreen popup warning on application launch. To allow Cattr to run on your PC, click \"More info\" then \"Run anyway\" button in the SmartScreen popup. If you feel unsafe doing this, you can build a desktop application from source code by yourself using the link below.",
+  "DOWNLOAD_REPOSITORY_NOTICE": "Here is the desktop application source code repository:"
+}
