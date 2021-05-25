@@ -6,7 +6,7 @@ stages:
 
 cache:
   paths:
-    - build/
+    - dist/
 
 build:
   stage: build
