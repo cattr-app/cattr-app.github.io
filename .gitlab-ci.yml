@@ -14,7 +14,7 @@ build:
     - release
   script:
     - npm install
-    - npm run build
+    - npm run generate
 
 deploy:
   stage: deploy
