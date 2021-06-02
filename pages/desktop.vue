@@ -12,7 +12,7 @@
               <div class="col-md-3">
                 <h4>
                   macOS
-                  <span v-if="releaseStrings.mac !== ''" id="dl-mac-version" class="badge bg-primary badge-version">
+                  <span v-if="releaseStrings.mac !== ''" aria-hidden="true" class="badge bg-primary badge-version">
                     {{ releaseStrings.mac }}
                   </span>
                   <PuSkeleton v-else width="42px" height="18px" />
@@ -36,7 +36,7 @@
                 <h4>
                   Windows
                   <sup><small class="red">∗</small></sup>
-                  <span v-if="releaseStrings.windows !== ''" id="dl-windows-version" class="badge bg-primary badge-version">
+                  <span v-if="releaseStrings.windows !== ''" aria-hidden="true" class="badge bg-primary badge-version">
                     {{ releaseStrings.windows }}
                   </span>
                   <PuSkeleton v-else width="42px" height="22px" />
@@ -61,7 +61,7 @@
               <div class="col-md-3">
                 <h4>
                   Linux
-                  <span v-if="releaseStrings.linux !== ''" id="dl-linux-version" class="badge bg-primary badge-version">
+                  <span v-if="releaseStrings.linux !== ''" aria-hidden="true" class="badge bg-primary badge-version">
                     {{ releaseStrings.linux }}
                   </span>
                   <PuSkeleton v-else width="42px" height="22px" />

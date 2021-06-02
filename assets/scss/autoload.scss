@@ -1,11 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
 
 @font-face {
-  font-family: 'Gilroy-ExtraBold';
+  font-family: 'Gilroy';
+  font-weight: 800;
   src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Gilroy-Light';
+  font-family: 'Gilroy';
+  font-weight: 300;
   src: url('../fonts/Gilroy-Light.otf') format('opentype');
 }

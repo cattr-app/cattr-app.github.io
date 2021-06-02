@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
   color: #151941;
-  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -42,7 +43,7 @@ h6 {
 }
 
 a {
-  font-family: 'Gilroy-Light', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -61,10 +62,11 @@ img {
 }
 
 .text {
-  font-family: 'Gilroy-Light', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
+  font-weight: 300;
   line-height: 160%;
   margin: 30px 0;
 }
@@ -81,7 +83,8 @@ img {
 .btn {
   padding: 16px 32px;
   border-radius: 15px;
-  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
   font-style: normal;
   font-size: 18px;
   line-height: 160%;
@@ -102,7 +105,8 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 .red {
-  color: #D95032;
+  // color: #D95032;
+  color: #a72b10;
 }
 
 .link-highlighted {
@@ -116,4 +120,9 @@ h1, h2, h3, h4, h5, h6, p, a, span {
   font-size: 12px;
   vertical-align: middle;
 
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
 }
