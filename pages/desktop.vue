@@ -12,48 +12,76 @@
               <div class="col-md-3">
                 <h4>
                   macOS
-                  <span id="dl-mac-version" class="badge bg-primary badge-version">
+                  <span v-if="releaseStrings.mac !== ''" id="dl-mac-version" class="badge bg-primary badge-version">
                     {{ releaseStrings.mac }}
                   </span>
+                  <PuSkeleton v-else width="42px" height="18px" />
                 </h4>
                 <br>
-                <span v-for="artifact in packagesMacOs" :key="artifact.format">
-                  <a class="download-link no-decoration" :href="artifact.link">
-                    <b>{{ distributionTypes.get(artifact.format) }}</b>
-                  </a>
-                  <br><br>
+                <span v-if="packagesMacOs.length > 0">
+                  <span v-for="artifact in packagesMacOs" :key="artifact.format">
+                    <a class="download-link no-decoration" :href="artifact.link">
+                      <b>{{ distributionTypes.get(artifact.format) }}</b>
+                    </a>
+                    <br><br>
+                  </span>
                 </span>
+                <div v-else>
+                  <PuSkeleton :count="1" width="128px" />
+                  <br><br>
+                  <PuSkeleton :count="1" width="96px" />
+                </div>
               </div>
               <div class="col-md-3">
                 <h4>
                   Windows
                   <sup><small class="red">∗</small></sup>
-                  <span id="dl-windows-version" class="badge bg-primary badge-version">
+                  <span v-if="releaseStrings.windows !== ''" id="dl-windows-version" class="badge bg-primary badge-version">
                     {{ releaseStrings.windows }}
                   </span>
+                  <PuSkeleton v-else width="42px" height="22px" />
                 </h4>
                 <br>
-                <span v-for="artifact in packagesWindows" :key="artifact.format">
-                  <a class="download-link no-decoration" :href="artifact.link">
-                    <b>{{ distributionTypes.get(artifact.format) }}</b>
-                  </a>
+                <div v-if="packagesWindows.length > 0">
+                  <span v-for="artifact in packagesWindows" :key="artifact.format">
+                    <a class="download-link no-decoration" :href="artifact.link">
+                      <b>{{ distributionTypes.get(artifact.format) }}</b>
+                    </a>
+                    <br><br>
+                  </span>
+                </div>
+                <div v-else>
+                  <PuSkeleton :count="1" width="128px" />
                   <br><br>
-                </span>
+                  <PuSkeleton :count="1" width="96px" />
+                  <br><br>
+                  <PuSkeleton :count="1" width="128px" />
+                </div>
               </div>
               <div class="col-md-3">
                 <h4>
                   Linux
-                  <span id="dl-linux-version" class="badge bg-primary badge-version">
+                  <span v-if="releaseStrings.linux !== ''" id="dl-linux-version" class="badge bg-primary badge-version">
                     {{ releaseStrings.linux }}
                   </span>
+                  <PuSkeleton v-else width="42px" height="22px" />
                 </h4>
                 <br>
-                <span v-for="artifact in packagesLinux" :key="artifact.format">
-                  <a class="download-link no-decoration" :href="artifact.link">
-                    <b>{{ distributionTypes.get(artifact.format) }}</b>
-                  </a>
+                <div v-if="packagesLinux.length > 0">
+                  <span v-for="artifact in packagesLinux" :key="artifact.format">
+                    <a class="download-link no-decoration" :href="artifact.link">
+                      <b>{{ distributionTypes.get(artifact.format) }}</b>
+                    </a>
+                    <br><br>
+                  </span>
+                </div>
+                <div v-else>
+                  <PuSkeleton :count="1" width="128px" />
                   <br><br>
-                </span>
+                  <PuSkeleton :count="1" width="96px" />
+                  <br><br>
+                  <PuSkeleton :count="1" width="128px" />
+                </div>
               </div>
             </div>
             <div id="dl-buttons-container" class="section-img-text-split-buttons" />
@@ -77,6 +105,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 
@@ -89,9 +118,9 @@ export default Vue.extend({
       packagesWindows: [],
       packagesLinux: [],
       releaseStrings: {
-        mac: '???',
-        windows: '???',
-        linux: '???'
+        mac: '',
+        windows: '',
+        linux: ''
       },
       distributionTypes: new Map([
         ['dmg', 'DMG Package'],
@@ -109,7 +138,24 @@ export default Vue.extend({
   },
   head () {
     return {
-      title: 'Cattr — Downloads'
+      title: 'Cattr — Downloads',
+      link: [
+        {
+          rel: 'preload',
+          href: 'https://dl.cattr.app/manifests/release-windows.json',
+          as: 'fetch'
+        },
+        {
+          rel: 'preload',
+          href: 'https://dl.cattr.app/manifests/release-mac.json',
+          as: 'fetch'
+        },
+        {
+          rel: 'preload',
+          href: 'https://dl.cattr.app/manifests/release-linux.json',
+          as: 'fetch'
+        }
+      ]
     }
   },
   async mounted () {
