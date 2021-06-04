@@ -34,7 +34,7 @@
                 {{ $t('Privacy Policy — Desktop') }}
               </a>
               <a href="/privacy/mobile">
-                {{ $t('Privacy Policty — Mobile') }}
+                {{ $t('Privacy Policy — Mobile') }}
               </a>
             </div>
           </div>
