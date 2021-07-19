@@ -24,6 +24,8 @@
   "What are you waiting for?": "Hey, hvad venter du på?",
   "Try demo now": "Prøv vores demo nu",
   "Terms of Service": "Betingelser",
+  "Privacy Policy — Desktop": "Privatlivspolitik — Desktop",
+  "Privacy Policy — Mobile": "Privatlivspolitik — Mobil",
   "Made by": "Produceret af",
   "DOWNLOAD_RED_SS_WARN": "∗ Notice ",
   "DOWNLOAD_SS_NOTICE": "that Cattr for Windows is not popular enough yet to pass Microsoft SmartScreen's protection, so you probably will experience SmartScreen popup warning on application launch. To allow Cattr to run on your PC, click \"More info\" then \"Run anyway\" button in the SmartScreen popup. If you feel unsafe doing this, you can build a desktop application from source code by yourself using the link below.",
