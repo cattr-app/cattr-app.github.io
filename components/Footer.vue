@@ -28,6 +28,10 @@
               <a href="https://community.cattr.app" rel="discussion" class="forum-link">
                 {{ $t('Community') }}
               </a>
+              <br>
+              <a href="/license" rel="license">
+                {{ $t('License') }}
+              </a>
             </div>
             <div class="col-md-3">
               <a href="/privacy/desktop">
