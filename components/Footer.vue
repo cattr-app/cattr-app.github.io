@@ -29,7 +29,7 @@
                 {{ $t('Community') }}
               </a>
               <br>
-              <a href="/license" rel="license">
+              <a href="/licenses" rel="license">
                 {{ $t('License') }}
               </a>
             </div>
@@ -39,6 +39,9 @@
               </a>
               <a href="/privacy/mobile">
                 {{ $t('Privacy Policy — Mobile') }}
+              </a>
+              <a href="/licenses/ru" rel="license">
+                {{ $t('License (RU)') }}
               </a>
             </div>
           </div>
