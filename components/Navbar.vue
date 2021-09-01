@@ -4,12 +4,12 @@
       <div class="row">
         <div class="col align-self-start">
           <div class="logo-plus-title">
-            <a href="/" class="no-decoration">
+            <nuxt-link to="/" class="no-decoration">
               <img src="~assets/images/logo.svg" alt="Cattr logotype with a cat inside of clock face" class="logotype">
               <h3 class="software-title margin">
                 Cattr
               </h3>
-            </a>
+            </nuxt-link>
           </div>
         </div>
         <div class="col align-self-end">

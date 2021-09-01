@@ -19,9 +19,9 @@
               <a href="https://docs.cattr.app" class="documentation-link">
                 {{ $t('Documentation') }}
               </a><br>
-              <a href="/desktop/">
+              <nuxt-link to="/desktop/">
                 {{ $t('Desktop app') }}
-              </a>
+              </nuxt-link>
             </div>
             <div class="col-md-3">
               <a href="https://github.com/cattr-app" rel="vcs-git" class="source-link">Github</a><br>
@@ -29,20 +29,18 @@
                 {{ $t('Community') }}
               </a>
               <br>
-              <a href="/licenses" rel="license">
-                {{ $t('License') }}
-              </a>
+              <nuxt-link to="licenses">{{ $t('License') }}</nuxt-link>
             </div>
             <div class="col-md-3">
-              <a href="/privacy/desktop">
+              <nuxt-link to="/privacy/desktop">
                 {{ $t('Privacy Policy — Desktop') }}
-              </a>
-              <a href="/privacy/mobile">
+              </nuxt-link>
+              <nuxt-link to="/privacy/mobile">
                 {{ $t('Privacy Policy — Mobile') }}
-              </a>
-              <a href="/licenses/ru" rel="license">
+              </nuxt-link>
+              <nuxt-link to="/licenses/ru">
                 {{ $t('License (RU)') }}
-              </a>
+              </nuxt-link>
             </div>
           </div>
           <br>
