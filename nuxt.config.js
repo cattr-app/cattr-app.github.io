@@ -179,5 +179,17 @@ export default {
       cookieKey: 'i18n_redirected',
       onlyOnRoot: true
     }
+  },
+
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'licenses',
+        path: '/licenses',
+        component: 'pages/licenses/index.vue',
+        alias: '/license'
+      })
+    }
   }
+
 }
