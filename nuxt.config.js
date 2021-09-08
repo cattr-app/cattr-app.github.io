@@ -181,7 +181,7 @@ export default {
     }
   },
 
-  router: {
+  /* router: {
     extendRoutes(routes, resolve) {
       routes.push({
         name: 'licenses',
@@ -190,6 +190,6 @@ export default {
         alias: '/license'
       })
     }
-  }
+  } */
 
 }
