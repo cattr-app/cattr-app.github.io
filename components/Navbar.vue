@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col align-self-start">
+        <div class="col-md-4 align-self-start">
           <div class="logo-plus-title">
             <nuxt-link to="/" class="no-decoration">
               <img src="~assets/images/logo.svg" alt="Cattr logotype with a cat inside of clock face" class="logotype">
@@ -35,6 +35,12 @@
                 </li>
               </div>
             </div>
+            <a href="/forinvestors" class="menu-item documentation-forinvestors">
+              {{ $t('For investors') }}
+            </a>
+            <a href="/services" class="menu-item documentation-services">
+              {{ $t('Services') }}
+            </a>
             <a href="https://docs.cattr.app" target="_blank" rel="noopener" class="menu-item documentation-link">
               {{ $t('Documentation') }}
             </a>
