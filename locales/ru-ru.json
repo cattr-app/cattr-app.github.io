@@ -35,5 +35,20 @@
   "DOWNLOAD_REPOSITORY_NOTICE": "Репозиторий исходного кода настольного приложения:",
   "Downloads": "Загрузки",
   "License": "Лицензия",
-  "License (RU)": "Лицензия (рус)"
+  "License (RU)": "Лицензия (рус)",
+  "Services": "Сервисы",
+  "For investors": "Инвесторам",
+  "Let us introduce you Cattr Enterprise - a timetracker for large businesses.":"Позвольте представить вам Cattr Enterprise - трекер для крупного бизнеса.",
+  "Flexible adjustment to the company needs thanks to the open source code and additional extensions":"Гибко настраиваетя на потребности предпрятия благодаря открытому исходному коду и дополнительным расширениям",
+"Hosted on the client's servers - data is not transferred to third parties":"Размещается на серверах клиента - данные не передаются третьим сторонам",
+"Has a scalable core, the ability to distribute the load between multiple servers. This is security, stability and speed of work for customers who do not have enough power of the free version":"Имеет масштабируемое ядро, возможность расределения нагрузки между несколькими серверами. Это безопасность, стабильность и скорость работы для клиентов, которым не хватает мощности бесплатной версии.",
+"Integrates with ERP":"Интегрируется с ERP",
+"Offers customers 24/7 support":"Предлагает клиентам поддержку 24/7",
+"Why Invest in Cattr Enterprise?":"Почему стоит инвестировать в Cattr Enterprise?",
+"it is in high demand due to the pandemic and great business exodus to online":"он высоко востребован из-за пандемии и массового переноса бизнеса в онлайн ",
+"high degree of readiness - there is already a product in the free version that promotes itself":"высокая степень готовности - уже есть продукт в бесплатной версии, который продвигает сам себя",
+"there are no competitors in the market for self-hosted solutions for large businesses":"нет конкурентов на рынке self-hosted решений для крупного бизнеса ",
+"it's a ready-made solution for automating recruiting and delivery services":"это готовое решение для автоматизации бизнеса в сфере услуг, рекрутинга, служб доставки",
+"Find out more":"Узнать больше"
+
 }
