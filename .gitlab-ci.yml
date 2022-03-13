@@ -1,6 +1,6 @@
 image: node:14-alpine
 
-deploy:
+pages:
   only:
     - release
   before_script:
