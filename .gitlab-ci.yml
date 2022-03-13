@@ -1,31 +1,17 @@
 image: node:lts-alpine
 
-stages:
-  - build
-  - deploy
-
-cache:
-  paths:
-    - dist/
-
 build:
   stage: build
   only:
     - release
+  before_script:
+    - apk add python make g++
   script:
     - npm install
     - npm run generate
-
-deploy:
-  stage: deploy
-  only:
-    - release
-  before_script:
-    - 'which ssh-agent || ( apk add --update openssh )'
-    - eval $(ssh-agent -s)
-    - echo "$CI_SSH_DEPLOY_SECRET" | ssh-add -
-    - mkdir -p ~/.ssh
-    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-  script:
-    - ssh cattr-deploy@docs.cattr.app 'rm -rf /srv/landing/*'
-    - scp -r dist/* cattr-deploy@docs.cattr.app:/srv/landing
+  after_script:
+    - mkdir public
+    - move dist/* public
+  artifacts:
+    paths:
+      - public
