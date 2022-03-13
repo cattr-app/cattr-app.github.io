@@ -1,17 +1,15 @@
 image: node:lts-alpine
 
-build:
-  stage: build
+deploy:
   only:
     - release
   before_script:
-    - apk add python make g++
+    - apk add python3 make g++
   script:
     - npm install
     - npm run generate
-  after_script:
     - mkdir public
-    - move dist/* public
+    - mv dist/* public
   artifacts:
     paths:
       - public
