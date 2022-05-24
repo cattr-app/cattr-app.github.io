@@ -14,7 +14,7 @@
                   <a href="https://docs.cattr.app" class="btn btn-primary mr-md-1 documentation-link">
                     {{ $t('Getting started') }}
                   </a>
-                  <nuxt-link to="/desktop" class="btn btn-secondary">
+                  <nuxt-link to="/desktop/" class="btn btn-secondary">
                     {{ $t('Download app') }}
                   </nuxt-link>
                 </div>
