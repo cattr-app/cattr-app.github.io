@@ -35,10 +35,10 @@
                 </li>
               </div>
             </div>
-            <a href="/forinvestors" class="menu-item documentation-forinvestors">
+            <a href="/forinvestors/" class="menu-item documentation-forinvestors">
               {{ $t('For investors') }}
             </a>
-            <a href="/services" class="menu-item documentation-services">
+            <a href="/services/" class="menu-item documentation-services">
               {{ $t('Services') }}
             </a>
             <a href="https://docs.cattr.app" target="_blank" rel="noopener" class="menu-item documentation-link">
