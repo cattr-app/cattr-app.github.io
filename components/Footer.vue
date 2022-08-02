@@ -29,16 +29,16 @@
                 {{ $t('Community') }}
               </a>
               <br>
-              <nuxt-link to="licenses">{{ $t('License') }}</nuxt-link>
+              <nuxt-link to="/licenses/">{{ $t('License') }}</nuxt-link>
             </div>
             <div class="col-md-3">
-              <nuxt-link to="/privacy/desktop">
+              <nuxt-link to="/privacy/desktop/">
                 {{ $t('Privacy Policy — Desktop') }}
               </nuxt-link>
-              <nuxt-link to="/privacy/mobile">
+              <nuxt-link to="/privacy/mobile/">
                 {{ $t('Privacy Policy — Mobile') }}
               </nuxt-link>
-              <nuxt-link to="/licenses/ru">
+              <nuxt-link to="/licenses/ru/">
                 {{ $t('License (RU)') }}
               </nuxt-link>
             </div>
