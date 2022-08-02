@@ -27,7 +27,6 @@ export default {
     ],
     script: [
       { src: '/embed/js/google-tag-manager.js' },
-      { src: '/embed/js/rocketchat.js' },
       {
         type: 'application/ld+json',
         json: [
