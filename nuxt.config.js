@@ -167,7 +167,8 @@ export default {
     locales: [
       { code: 'en', iso: 'en-US', file: 'en-us.json', name: 'English' },
       { code: 'ru', iso: 'ru-RU', file: 'ru-ru.json', name: 'Русский' },
-      { code: 'dk', iso: 'da-DK', file: 'da-dk.json', name: 'Dansk' }
+      { code: 'dk', iso: 'da-DK', file: 'da-dk.json', name: 'Dansk' },
+      { code: 'de', iso: 'de-DE', file: 'de-de.json', name: 'Deutsch' }
     ],
     vueI18n: {
       fallbackLocale: 'en'
