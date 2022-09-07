@@ -5,7 +5,7 @@
       <section id="section-hero" class="container">
         <div class="row align-items-center">
           <div class="col-md-12 col-sm-12">
-            <h1>{{ $t('Services') }}</h1>
+            <h1>{{ $t('Downloads') }}</h1>
             <br>
             <br>
             <div class="row">
