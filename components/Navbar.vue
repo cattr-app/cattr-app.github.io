@@ -38,7 +38,7 @@
             <a href="/forinvestors/" class="menu-item documentation-forinvestors">
               {{ $t('For investors') }}
             </a>
-            <a href="/services/" class="menu-item documentation-services">
+            <a href="/desktop/" class="menu-item documentation-services">
               {{ $t('Downloads') }}
             </a>
             <a href="https://docs.cattr.app" target="_blank" rel="noopener" class="menu-item documentation-link">
