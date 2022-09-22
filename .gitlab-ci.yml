@@ -3,7 +3,7 @@ image: node:14-alpine
 pages:
   stage: deploy
   only:
-    - release
+    - tags
   before_script:
     - apk add python3 make g++
   script:
