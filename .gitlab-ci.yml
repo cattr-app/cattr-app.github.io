@@ -7,8 +7,8 @@ pages:
   before_script:
     - apk add python3 make g++
   script:
-    - npm install
-    - npm run generate
+    - yarn install
+    - yarn generate
     - mkdir public
     - mv dist/* public
   artifacts:
