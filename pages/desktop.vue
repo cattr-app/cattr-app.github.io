@@ -124,31 +124,31 @@ export default Vue.extend({
         windows: [
           {
             name: 'Installer',
-            link: 'https://git.amazingcat.net/cattr/desktop/desktop-application/-/releases/permalink/latest/downloads/nsis',
+            link: 'https://github.com/cattr-app/desktop-application/releases/latest/download/Cattr_Setup.exe',
           },
           {
             name: 'Portable',
-            link: 'https://git.amazingcat.net/cattr/desktop/desktop-application/-/releases/permalink/latest/downloads/exe',
+            link: 'https://github.com/cattr-app/desktop-application/releases/latest/download/Cattr.exe',
           }
         ],
         mac: [
           {
             name: 'DMG Package',
-            link: 'https://git.amazingcat.net/cattr/desktop/desktop-application/-/releases/permalink/latest/downloads/dmg',
+            link: 'https://github.com/cattr-app/desktop-application/releases/latest/download/Cattr.dmg',
           }
         ],
         linux: [
           {
             name: 'Tarball',
-            link: 'https://git.amazingcat.net/cattr/desktop/desktop-application/-/releases/permalink/latest/downloads/tar',
+            link: 'https://github.com/cattr-app/desktop-application/releases/latest/download/Cattr.tar.gz',
           },
           {
             name: 'Deb package',
-            link: 'https://git.amazingcat.net/cattr/desktop/desktop-application/-/releases/permalink/latest/downloads/deb',
+            link: 'https://github.com/cattr-app/desktop-application/releases/latest/download/Cattr.deb',
           },
           {
             name: 'AppImage',
-            link: 'https://git.amazingcat.net/cattr/desktop/desktop-application/-/releases/permalink/latest/downloads/appimage'
+            link: 'https://github.com/cattr-app/desktop-application/releases/latest/download/Cattr.AppImage'
           },
         ]
       },
@@ -160,18 +160,18 @@ export default Vue.extend({
       link: [
         {
           rel: 'preload',
-          href: 'https://git.amazingcat.net/api/v4/projects/353/releases?page=1&per_page=1',
+          href: 'https://api.github.com/repos/cattr-app/desktop-application/releases/latest',
           as: 'fetch'
         }
       ]
     };
   },
   async mounted() {
-    const releasesRequest = await this.$axios.get('https://git.amazingcat.net/api/v4/projects/353/releases?page=1&per_page=1');
+    const releasesRequest = await this.$axios.get('https://api.github.com/repos/cattr-app/desktop-application/releases/latest');
 
-    this.releaseStrings.mac = `${releasesRequest.data[0].name} intel`;
-    this.releaseStrings.windows = `${releasesRequest.data[0].name} x64`;
-    this.releaseStrings.linux = `${releasesRequest.data[0].name} amd64`;
+    this.releaseStrings.mac = `${releasesRequest.data.tag_name} intel`;
+    this.releaseStrings.windows = `${releasesRequest.data.tag_name} x64`;
+    this.releaseStrings.linux = `${releasesRequest.data.tag_name} amd64`;
   }
 });
 </script>
