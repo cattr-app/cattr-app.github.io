@@ -5,8 +5,9 @@ pages:
   only:
     - tags
   before_script:
-    - apk add python3 python make g++
+    - apk add python3 make g++
   script:
+    - corepack enable
     - yarn install
     - yarn generate
     - mkdir public
