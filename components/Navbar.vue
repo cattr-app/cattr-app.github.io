@@ -44,7 +44,7 @@
             <a href="https://docs.cattr.app" target="_blank" rel="noopener" class="menu-item documentation-link">
               {{ $t('Documentation') }}
             </a>
-            <a href="https://community.cattr.app" target="_blank" rel="noopener" class="menu-item forum-link">
+            <a href="https://github.com/orgs/cattr-app/discussions" target="_blank" rel="noopener" class="menu-item forum-link">
               {{ $t('Community') }}
             </a>
             <a href="https://demo.cattr.app" target="_blank" rel="noopener" class="menu-item demo-link">
