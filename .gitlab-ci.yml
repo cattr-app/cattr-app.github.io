@@ -5,7 +5,7 @@ pages:
   only:
     - tags
   before_script:
-    - apk add python3 make g++ build-essential
+    - apk add python3 make g++ build-essentials
   script:
     - yarn install
     - yarn generate
