@@ -13,9 +13,6 @@
           <br>
           <div class="row link-container">
             <div class="col-md-3">
-              <a href="https://community.cattr.app/public/d/2-terms-conditions">
-                {{ $t('Terms of Service') }}
-              </a><br>
               <a href="https://docs.cattr.app" class="documentation-link">
                 {{ $t('Documentation') }}
               </a><br>
@@ -25,9 +22,6 @@
             </div>
             <div class="col-md-3">
               <a href="https://github.com/cattr-app" rel="vcs-git" class="source-link">Github</a><br>
-              <a href="https://community.cattr.app" rel="discussion" class="forum-link">
-                {{ $t('Community') }}
-              </a>
               <br>
               <nuxt-link to="/licenses/">{{ $t('License') }}</nuxt-link>
             </div>
