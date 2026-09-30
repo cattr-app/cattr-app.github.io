@@ -30,10 +30,12 @@ jobs:
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
         with:
           node-version: 14.21.3
-          cache: yarn
 
       - name: Enable Corepack
         run: corepack enable
+
+      - name: Activate pinned Yarn
+        run: corepack prepare yarn@3.2.3 --activate && yarn --version
 
       - name: Install dependencies
         run: yarn install --immutable
