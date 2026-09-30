@@ -1,3 +1,8 @@
+const githubPagesBasePath = (process.env.GITHUB_PAGES_BASE_PATH || '').replace(
+  /^\/+|\/+$/g,
+  '')
+const githubPagesBase = githubPagesBasePath ? `/${githubPagesBasePath}/` : '/'
+
 export default {
 
   ssr: false,
@@ -23,10 +28,9 @@ export default {
       { name: 'og:image', content: 'https://cattr.app/resources/logo.png' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: `${githubPagesBase}favicon.ico`}
     ],
     script: [
-      { src: '/embed/js/google-tag-manager.js' },
       {
         type: 'application/ld+json',
         json: [
@@ -154,13 +158,6 @@ export default {
     'nuxt-i18n'
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
-
   i18n: {
     defaultLocale: 'en',
     langDir: '~locales/',
@@ -182,14 +179,18 @@ export default {
   },
 
   router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'licenses',
-        path: '/licenses',
-        component: 'pages/licenses/index.vue',
-        alias: '/license'
-      })
+    base: githubPagesBase,
+    extendRoutes(routes) {
+      const licensesRoute = routes.find(route => route.path === '/licenses')
+      if (licensesRoute) {
+        licensesRoute.alias = '/license'
+      }
     }
+  },
+
+  generate: {
+    // Keep the legacy alias available as a generated file on static hosts.
+    routes: ['/license']
   }
 
 }

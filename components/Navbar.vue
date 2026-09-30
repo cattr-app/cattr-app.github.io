@@ -35,12 +35,12 @@
                 </li>
               </div>
             </div>
-            <a href="/forinvestors/" class="menu-item documentation-forinvestors">
+            <nuxt-link class="menu-item documentation-forinvestors" to="/forinvestors/">
               {{ $t('For investors') }}
-            </a>
-            <a href="/desktop/" class="menu-item documentation-services">
+            </nuxt-link>
+            <nuxt-link class="menu-item documentation-services" to="/desktop/">
               {{ $t('Downloads') }}
-            </a>
+            </nuxt-link>
             <a href="https://docs.cattr.app" target="_blank" rel="noopener" class="menu-item documentation-link">
               {{ $t('Documentation') }}
             </a>
@@ -58,7 +58,8 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import type { LocaleObject } from 'nuxt-i18n'
+import type {LocaleObject} from 'nuxt-i18n'
+
 export default Vue.extend({
   data () {
     return {
