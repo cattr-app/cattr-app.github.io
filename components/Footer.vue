@@ -21,7 +21,7 @@
               </nuxt-link>
             </div>
             <div class="col-md-3">
-              <a href="https://github.com/cattr-app" rel="vcs-git" class="source-link">Github</a><br>
+              <a href="https://github.com/cattr-app" rel="vcs-git" class="source-link">Github</a>
               <br>
               <nuxt-link to="/licenses/">{{ $t('License') }}</nuxt-link>
             </div>
