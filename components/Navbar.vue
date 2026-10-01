@@ -41,7 +41,7 @@
             <nuxt-link class="menu-item documentation-services" to="/desktop/">
               {{ $t('Downloads') }}
             </nuxt-link>
-            <a href="https://docs.cattr.app" target="_blank" rel="noopener" class="menu-item documentation-link">
+            <a href="https://cattr.app/manual" target="_blank" rel="noopener" class="menu-item documentation-link">
               {{ $t('Documentation') }}
             </a>
             <a href="https://github.com/orgs/cattr-app/discussions" target="_blank" rel="noopener" class="menu-item forum-link">
