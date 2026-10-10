@@ -20,12 +20,50 @@ export default {
       { name: 'description', content: 'Manage your time with ease. Open source time tracking application' },
 
       // Open Graph Protocol
-      { name: 'og:title', content: 'Cattr' },
-      { name: 'og:site_name', content: 'Cattr' },
-      { name: 'og:type', content: 'website' },
-      { name: 'og:url', content: 'https://cattr.app' },
-      { name: 'og:description', content: 'Manage your time with ease. Open source time tracking application' },
-      { name: 'og:image', content: 'https://cattr.app/resources/logo.png' }
+      {
+        property: 'og:title',
+        content: 'Cattr'
+      },
+      {
+        property: 'og:site_name',
+        content: 'Cattr'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:url',
+        content: 'https://cattr.app/'
+      },
+      {
+        property: 'og:description',
+        content: 'Manage your time with ease. Open source time tracking application'
+      },
+      {
+        property: 'og:image',
+        content: 'https://cattr.app/og-image.png'
+      },
+      {
+        property: 'og:image:secure_url',
+        content: 'https://cattr.app/og-image.png'
+      },
+      {
+        property: 'og:image:type',
+        content: 'image/png'
+      },
+      {
+        property: 'og:image:width',
+        content: '1200'
+      },
+      {
+        property: 'og:image:height',
+        content: '630'
+      },
+      {
+        property: 'og:image:alt',
+        content: 'Cattr — open-source self-hosted time tracking'
+      }
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: `${githubPagesBase}favicon.ico`}
@@ -61,7 +99,7 @@ export default {
             applicationSubCategory: 'time tracking',
             downloadUrl: 'https://cattr.app/desktop/',
             datePublished: '2020-03-20',
-            image: 'https://cattr.app/resources/logo.svg',
+            image: 'https://cattr.app/logo.svg',
             author: {
               '@type': 'Organization',
               url: 'https://amazingcat.net',
@@ -83,7 +121,7 @@ export default {
             applicationSubCategory: 'time tracking',
             downloadUrl: 'https://github.com/cattr-app',
             datePublished: '2020-03-20',
-            image: 'https://cattr.app/resources/logo.svg',
+            image: 'https://cattr.app/logo.svg',
             author: {
               '@type': 'Organization',
               url: 'https://amazingcat.net',
