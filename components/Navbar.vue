@@ -41,9 +41,12 @@
             <nuxt-link class="menu-item documentation-services" to="/desktop/">
               {{ $t('Downloads') }}
             </nuxt-link>
-            <a href="https://cattr.app/manual" target="_blank" rel="noopener" class="menu-item documentation-link">
-              {{ $t('Documentation') }}
+            <a class="menu-item documentation-link" href="https://cattr.app/manual/" rel="noopener" target="_blank">
+              {{ $t('User Guide') }}
             </a>
+            <nuxt-link class="menu-item documentation-link" to="/developers/">
+              {{ $t('Developers') }}
+            </nuxt-link>
             <a href="https://github.com/orgs/cattr-app/discussions" target="_blank" rel="noopener" class="menu-item forum-link">
               {{ $t('Community') }}
             </a>
@@ -58,7 +61,7 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import type {LocaleObject} from 'nuxt-i18n'
+import type { LocaleObject } from 'nuxt-i18n'
 
 export default Vue.extend({
   data () {

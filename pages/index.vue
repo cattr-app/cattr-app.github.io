@@ -11,7 +11,7 @@
                   {{ $t('Manage your time with ease') }}
                 </h1>
                 <div class="section-img-text-split-buttons d-md-flex text-center text-md-left">
-                  <a href="https://docs.cattr.app" class="btn btn-primary mr-md-1 documentation-link">
+                  <a class="btn btn-primary mr-md-1 documentation-link" href="https://cattr.app/manual/">
                     {{ $t('Getting started') }}
                   </a>
                   <nuxt-link to="/desktop/" class="btn btn-secondary">
@@ -48,6 +48,34 @@
             </p>
           </div>
         </div>
+      </section>
+
+      <section id="documentation" aria-labelledby="documentation-heading" class="container text-center">
+        <h2 id="documentation-heading">
+          {{ $t('Documentation and Development') }}
+        </h2>
+        <p class="text">{{ $t('Learn to use, integrate and extend Cattr.') }}</p>
+        <nav aria-label="Cattr documentation">
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <h4><a href="https://cattr.app/manual/">{{ $t('User Guide') }}</a></h4>
+              <p>{{ $t('Installation, configuration and usage.') }}</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h4><a href="https://docs.cattr.app/api/">{{ $t('API Reference') }}</a></h4>
+              <p>{{ $t('API endpoints, authentication and integrations.') }}</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h4><a href="https://docs.cattr.app/backend/">{{ $t('Backend Development') }}</a></h4>
+              <p>{{ $t('Server architecture and modules.') }}</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h4><a href="https://docs.cattr.app/frontend/">{{ $t('Frontend Development') }}</a></h4>
+              <p>{{ $t('Frontend architecture and extensions.') }}</p>
+            </div>
+          </div>
+        </nav>
+        <nuxt-link to="/developers/">{{ $t('Developers') }} →</nuxt-link>
       </section>
 
       <section id="our-benefits" class="container text-center">
@@ -180,7 +208,7 @@
           <h2>
             {{ $t('What are you waiting for?') }}
           </h2>
-          <a href="https://docs.cattr.app" class="btn btn-primary documentation-link">
+          <a class="btn btn-primary documentation-link" href="https://cattr.app/manual/">
             {{ $t('Getting started') }}
           </a>
           <a href="https://demo.cattr.app" target="_blank" class="btn btn-secondary demo-link">

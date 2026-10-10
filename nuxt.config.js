@@ -5,12 +5,12 @@ const githubPagesBase = githubPagesBasePath ? `/${githubPagesBasePath}/` : '/'
 
 export default {
 
-  ssr: false,
+  ssr: true,
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'cattr-landing-page',
+    title: 'Cattr — Open-source Self-hosted Time Tracking',
     htmlAttrs: {
       lang: 'en'
     },
@@ -99,7 +99,7 @@ export default {
               logo: 'https://amazingcat.net/images/logo.png'
             },
             datePublished: '2020-03-20',
-            codeRepository: 'https://github.com/cattr-app/backend-application',
+            codeRepository: 'https://github.com/cattr-app/server-application',
             codeSampleType: 'full',
             programmingLanguage: 'PHP'
           }, {
@@ -132,14 +132,19 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
+  // Bootstrap SCSS is already imported by assets/scss/main.scss.
+  // Do not load the Bootstrap JS package entrypoint on the server.
   css: [
-    'bootstrap',
     '~assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vue-loading-skeleton.ts'
+    '~/plugins/vue-loading-skeleton.ts',
+    {
+      src: '~/plugins/bootstrap.client.js',
+      mode: 'client'
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

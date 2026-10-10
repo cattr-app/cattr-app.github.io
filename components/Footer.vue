@@ -13,9 +13,16 @@
           <br>
           <div class="row link-container">
             <div class="col-md-3">
-              <a href="https://docs.cattr.app" class="documentation-link">
-                {{ $t('Documentation') }}
-              </a><br>
+              <nav aria-label="Cattr documentation">
+                <a class="documentation-link" href="https://cattr.app/manual/">{{ $t('User Guide') }}</a><br>
+                <a class="documentation-link" href="https://docs.cattr.app/api/">{{ $t('API Reference') }}</a><br>
+                <a class="documentation-link" href="https://docs.cattr.app/backend/">{{ $t('Backend Development') }}</a><br>
+                <a class="documentation-link" href="https://docs.cattr.app/frontend/">{{
+                    $t('Frontend Development')
+                  }}</a><br>
+                <nuxt-link to="/developers/">{{ $t('Developers') }}</nuxt-link>
+              </nav>
+              <br>
               <nuxt-link to="/desktop/">
                 {{ $t('Desktop app') }}
               </nuxt-link>

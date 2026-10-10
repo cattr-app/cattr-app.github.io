@@ -1,0 +1,26 @@
+# Cattr
+
+> Cattr is an open-source, self-hosted time tracking platform with activity tracking, screenshots, reporting, and extensions.
+
+Website: https://cattr.app/
+
+## User documentation
+
+- [User Guide](https://cattr.app/manual/): Installation, configuration, administration, and everyday use.
+
+## Developer documentation
+
+- [Developers](https://cattr.app/developers/): Documentation and source-code entry point.
+- [API Reference](https://docs.cattr.app/api/): API endpoints and integration.
+- [Backend Development](https://docs.cattr.app/backend/): Server architecture and module development.
+- [Frontend Development](https://docs.cattr.app/frontend/): Frontend architecture and extensions.
+
+## Source code
+
+- [Server](https://github.com/cattr-app/server-application)
+- [Frontend](https://github.com/cattr-app/frontend-application)
+- [Desktop](https://github.com/cattr-app/desktop-application)
+
+## Community
+
+- [Discussions](https://github.com/orgs/cattr-app/discussions)
