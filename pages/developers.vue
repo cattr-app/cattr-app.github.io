@@ -30,7 +30,6 @@
         <h2>Source code</h2>
         <ul>
           <li><a href="https://github.com/cattr-app/server-application">Server application</a></li>
-          <li><a href="https://github.com/cattr-app/frontend-application">Frontend application</a></li>
           <li><a href="https://github.com/cattr-app/desktop-application">Desktop application</a></li>
           <li><a href="https://github.com/orgs/cattr-app/discussions">Community discussions</a></li>
         </ul>
