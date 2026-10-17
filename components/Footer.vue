@@ -15,7 +15,7 @@
             <div class="col-md-3">
               <nav aria-label="Cattr documentation">
                 <a class="documentation-link" href="https://cattr.app/manual/">{{ $t('User Guide') }}</a><br>
-                <a class="documentation-link" href="https://docs.cattr.app/api/">{{ $t('API Reference') }}</a><br>
+                <a class="documentation-link" href="https://cattr.app/server-application/api/">{{ $t('API Reference') }}</a><br>
                 <a class="documentation-link" href="https://docs.cattr.app/backend/">{{ $t('Backend Development') }}</a><br>
                 <a class="documentation-link" href="https://docs.cattr.app/frontend/">{{
                     $t('Frontend Development')
