@@ -10,15 +10,15 @@ Website: https://cattr.app/
 
 ## Developer documentation
 
+- [Developer guides (English / Русский)](https://github.com/cattr-app/server-application/blob/main/docs/developer/README.md): All guides, maintained with the server source code.
 - [Developers](https://cattr.app/developers/): Documentation and source-code entry point.
-- [API Reference](https://docs.cattr.app/api/): API endpoints and integration.
-- [Backend Development](https://docs.cattr.app/backend/): Server architecture and module development.
-- [Frontend Development](https://docs.cattr.app/frontend/): Frontend architecture and extensions.
+- [API Reference](https://cattr.app/server-application/api/): HTTP API endpoints and integrations.
+- [Backend Development](https://github.com/cattr-app/server-application/blob/main/docs/developer/en/backend/README.md): Laravel server extension APIs, permissions, events and filters.
+- [Frontend Development](https://github.com/cattr-app/server-application/blob/main/docs/developer/en/frontend/README.md): Vue 2 modules, components and routing.
 
 ## Source code
 
 - [Server](https://github.com/cattr-app/server-application)
-- [Frontend](https://github.com/cattr-app/frontend-application)
 - [Desktop](https://github.com/cattr-app/desktop-application)
 
 ## Community

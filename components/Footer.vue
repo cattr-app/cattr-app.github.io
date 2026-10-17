@@ -16,8 +16,8 @@
               <nav aria-label="Cattr documentation">
                 <a class="documentation-link" href="https://cattr.app/manual/">{{ $t('User Guide') }}</a><br>
                 <a class="documentation-link" href="https://cattr.app/server-application/api/">{{ $t('API Reference') }}</a><br>
-                <a class="documentation-link" href="https://docs.cattr.app/backend/">{{ $t('Backend Development') }}</a><br>
-                <a class="documentation-link" href="https://docs.cattr.app/frontend/">{{
+                <a class="documentation-link" :href="'https://github.com/cattr-app/server-application/blob/main/docs/developer/' + developerDocsLanguage + '/backend/README.md'">{{ $t('Backend Development') }}</a><br>
+                <a class="documentation-link" :href="'https://github.com/cattr-app/server-application/blob/main/docs/developer/' + developerDocsLanguage + '/frontend/README.md'">{{
                     $t('Frontend Development')
                   }}</a><br>
                 <nuxt-link to="/developers/">{{ $t('Developers') }}</nuxt-link>
@@ -76,3 +76,15 @@
     </div>
   </footer>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  computed: {
+    developerDocsLanguage (): string {
+      return this.$i18n.locale === 'ru' ? 'ru' : 'en'
+    }
+  }
+})
+</script>

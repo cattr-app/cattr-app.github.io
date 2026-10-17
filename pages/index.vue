@@ -62,15 +62,15 @@
               <p>{{ $t('Installation, configuration and usage.') }}</p>
             </div>
             <div class="col-md-3 mb-4">
-              <h4><a href="https://docs.cattr.app/api/">{{ $t('API Reference') }}</a></h4>
+              <h4><a href="https://cattr.app/server-application/api/">{{ $t('API Reference') }}</a></h4>
               <p>{{ $t('API endpoints, authentication and integrations.') }}</p>
             </div>
             <div class="col-md-3 mb-4">
-              <h4><a href="https://docs.cattr.app/backend/">{{ $t('Backend Development') }}</a></h4>
+              <h4><a :href="'https://github.com/cattr-app/server-application/blob/main/docs/developer/' + developerDocsLanguage + '/backend/README.md'">{{ $t('Backend Development') }}</a></h4>
               <p>{{ $t('Server architecture and modules.') }}</p>
             </div>
             <div class="col-md-3 mb-4">
-              <h4><a href="https://docs.cattr.app/frontend/">{{ $t('Frontend Development') }}</a></h4>
+              <h4><a :href="'https://github.com/cattr-app/server-application/blob/main/docs/developer/' + developerDocsLanguage + '/frontend/README.md'">{{ $t('Frontend Development') }}</a></h4>
               <p>{{ $t('Frontend architecture and extensions.') }}</p>
             </div>
           </div>
@@ -229,6 +229,11 @@ import Footer from '../components/Footer.vue'
 export default Vue.extend({
   components: { Navbar, Footer },
   layout: 'landing',
+  computed: {
+    developerDocsLanguage (): string {
+      return this.$i18n.locale === 'ru' ? 'ru' : 'en'
+    }
+  },
   head () {
     return {
       title: 'Cattr'

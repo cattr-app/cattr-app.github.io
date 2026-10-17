@@ -9,10 +9,15 @@ import xml.etree.ElementTree as ET
 
 DOC_URLS = {
     "https://cattr.app/manual/",
-    "https://docs.cattr.app/api/",
+    "https://cattr.app/server-application/api/",
+    "https://github.com/cattr-app/server-application/blob/main/docs/developer/en/backend/README.md",
+    "https://github.com/cattr-app/server-application/blob/main/docs/developer/en/frontend/README.md",
+}
+
+LEGACY_DOC_URLS = (
     "https://docs.cattr.app/backend/",
     "https://docs.cattr.app/frontend/",
-}
+)
 
 
 class HTMLContent(HTMLParser):
@@ -50,6 +55,8 @@ def check_page(path, required_text):
 
     if required_text not in visible:
         raise SystemExit(f"{path}: missing prerendered visible text {required_text!r}")
+    if any(url in html for url in LEGACY_DOC_URLS):
+        raise SystemExit(f"{path}: found outdated frontend/backend documentation link")
     missing = DOC_URLS - page.links
     if missing:
         raise SystemExit(f"{path}: missing HTML documentation links: {sorted(missing)}")
@@ -79,6 +86,14 @@ def main():
         if not path.is_file() or not path.read_text(encoding="utf-8").strip():
             raise SystemExit(f"Missing or empty static file: {path}")
         print(f"OK: {path}")
+
+    llms_text = Path("dist/llms.txt").read_text(encoding="utf-8")
+    if any(url in llms_text for url in LEGACY_DOC_URLS):
+        raise SystemExit("dist/llms.txt: found outdated frontend/backend documentation link")
+    for url in sorted(DOC_URLS):
+        if url not in llms_text:
+            raise SystemExit(f"dist/llms.txt: missing documentation URL {url}")
+    print("OK: llms.txt points to current documentation")
 
     logo = Path("dist/logo.svg")
     image = Path("dist/og-image.png")

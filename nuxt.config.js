@@ -149,18 +149,6 @@ export default {
               logo: 'https://amazingcat.net/images/logo.png'
             },
             datePublished: '2020-03-20',
-            codeRepository: 'https://github.com/cattr-app/frontend-application',
-            codeSampleType: 'full',
-            programmingLanguage: 'JavaScript'
-          }, {
-            '@context': 'https://schema.org',
-            '@type': 'SoftwareSourceCode',
-            author: {
-              '@type': 'Organization',
-              url: 'https://amazingcat.net',
-              logo: 'https://amazingcat.net/images/logo.png'
-            },
-            datePublished: '2020-03-20',
             codeRepository: 'https://github.com/cattr-app/desktop-application',
             codeSampleType: 'full',
             programmingLanguage: 'JavaScript'
