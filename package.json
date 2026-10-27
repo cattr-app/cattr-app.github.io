@@ -16,7 +16,7 @@
     "bootstrap": "^5.2.1",
     "core-js": "^3.25.2",
     "jquery": "^3.6.1",
-    "nuxt": "^2.15.3",
+    "nuxt": "^4.6.2",
     "nuxt-i18n": "^6.27.0",
     "vue-loading-skeleton": "^1.1.9"
   },
